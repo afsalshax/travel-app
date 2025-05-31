@@ -2184,7 +2184,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     padding-top: 40px;
     display: block;
     text-align: center;
-    background-color: var(--smoke-color)
+    background-color: var(--title-color)
 }
 
 .th-menu-wrapper .mobile-logo svg {
@@ -2205,8 +2205,19 @@ input[type=time]::-webkit-calendar-picker-indicator {
     font-size: 18px;
     z-index: 1;
     color: var(--white-color);
-    background-color: var(--title-color);
+    background-color: #000000;
     border-radius: 50%
+}
+
+.th-menu-wrapper.th-body-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.th-menu-wrapper.th-body-visible .th-menu-area {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
 }
 
 .th-menu-wrapper .th-menu-toggle:hover {
@@ -2255,17 +2266,19 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .th-mobile-menu ul li {
     border-bottom: 1px solid #fdedf1;
-    list-style-type: none
+    list-style-type: none;
+    padding: 12px 0;
+
 }
 
 .th-mobile-menu ul li li:first-child {
-    border-top: 1px solid #fdedf1
+    border-top: 1px solid #fdedf1;
 }
 
-.th-mobile-menu ul li a {
+.th-mobile-menu ul li span {
     display: block;
     position: relative;
-    padding: 12px 0;
+    /* padding: 12px 0; */
     line-height: 1.4;
     font-size: 16px;
     text-transform: capitalize;
@@ -2273,7 +2286,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     padding-left: 0px
 }
 
-.th-mobile-menu ul li a:before {
+.th-mobile-menu ul li span:before {
     content: '\f105';
     font-family: var(--icon-font);
     position: absolute;
@@ -2281,14 +2294,15 @@ input[type=time]::-webkit-calendar-picker-indicator {
     top: 12px;
     margin-right: 10px;
     display: inline-block;
-    display: none
+    display: none;
+        padding: 12px 0;
 }
 
-.th-mobile-menu ul li.th-active>a {
-    color: var(--theme-color)
+.th-mobile-menu ul li.th-active>span {
+    color: #ff6600
 }
 
-.th-mobile-menu ul li.th-active>a:before {
+.th-mobile-menu ul li.th-active>span:before {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg)
@@ -2298,7 +2312,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     border-bottom: none
 }
 
-.th-mobile-menu ul .menu-item-has-children>a .th-mean-expand {
+.th-mobile-menu ul .menu-item-has-children>span .th-mean-expand {
     position: absolute;
     right: 0;
     top: 50%;
@@ -2316,12 +2330,12 @@ input[type=time]::-webkit-calendar-picker-indicator {
     border-radius: 50%
 }
 
-.th-mobile-menu ul .menu-item-has-children>a .th-mean-expand:before {
+.th-mobile-menu ul .menu-item-has-children>span .th-mean-expand:before {
     content: '\f067';
     font-family: var(--icon-font)
 }
 
-.th-mobile-menu ul .menu-item-has-children>a:after {
+.th-mobile-menu ul .menu-item-has-children>span:after {
     content: "\f067";
     font-family: var(--icon-font);
     width: 22px;
@@ -2336,11 +2350,11 @@ input[type=time]::-webkit-calendar-picker-indicator {
     margin-top: 1px
 }
 
-.th-mobile-menu ul .menu-item-has-children.th-active>a .th-mean-expand:before {
+.th-mobile-menu ul .menu-item-has-children.th-active>span .th-mean-expand:before {
     content: '\f068'
 }
 
-.th-mobile-menu ul .menu-item-has-children.th-active>a:after {
+.th-mobile-menu ul .menu-item-has-children.th-active>span:after {
     content: "\f068"
 }
 
@@ -2365,7 +2379,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 
 .th-menu-toggle:hover {
-    background-color: var(--title-color)
+    background-color: #FF0000
 }
 
 .th-menu-toggle.style-text,
@@ -2673,7 +2687,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 
 .th-btn.style3:before {
-    background-color: 	#FF0000
+    background-color: #FF0000
 }
 
 .th-btn.style4 {
@@ -2689,7 +2703,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .th-btn.style4:hover {
     color: var(--white-color);
-    border: 1px solid  #FF0000
+    border: 1px solid #FF0000
 }
 
 .th-btn.style4:hover.th-icon:after {
@@ -2865,7 +2879,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .play-btn:hover:after,
 .play-btn:hover::before,
 .play-btn:hover i {
-    background-color:#FF0000;
+    background-color: #FF0000;
     color: var(--white-color)
 }
 
@@ -3605,25 +3619,25 @@ hr.title-line {
 }
 
 .cursor-follower {
-  position: fixed;
-  width: 15px;
-  height: 15px;
-  background: var(--theme-color, #ff6600);
-  border: 1px solid var(--theme-color, #ff6600);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 999999;
-  user-select: none;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition:
-    top 0.1s ease,
-    left 0.1s ease,
-    opacity 0.2s ease,
-    background 0.2s ease;
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background: var(--theme-color, #ff6600);
+    border: 1px solid var(--theme-color, #ff6600);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999999;
+    user-select: none;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition:
+        top 0.1s ease,
+        left 0.1s ease,
+        opacity 0.2s ease,
+        background 0.2s ease;
 }
 
 
@@ -8296,14 +8310,14 @@ ol.wp-block-rss {
 }
 
 .header-layout1 .logo-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 280px;
-  height: 92px;
-  z-index: -1;
-  background-color: var(--theme-color);
-  border-top-right-radius: 80px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 92px;
+    z-index: -1;
+    background-color: var(--theme-color);
+    border-top-right-radius: 80px 100px;
 }
 
 

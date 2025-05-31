@@ -38,9 +38,8 @@ function Footer() {
                 <div className="th-widget-about">
                   <div className="about-logo">
                 <Link to="/">
-                      <a
-                        ><img src="assets/img/logo-white.svg" alt="Tourm"
-                      /></a>
+                      <img src="assets/img/logo-white.svg" alt="Tourm"
+                      />
                 </Link>
                   </div>
                   <p className="about-text">
@@ -67,11 +66,11 @@ function Footer() {
                 <h3 className="widget_title">Quick Links</h3>
                 <div className="menu-all-pages-container">
                   <ul className="menu">
-                    <li><Link to="/"><a>Home</a></Link></li>
-                    <li><Link to="/about"><a>About us</a></Link></li>
-                    <li><Link to="/service"><a>Our Service</a></Link></li>
-                    <li><Link to="/contact"><a>Terms of Service</a></Link></li>
-                    <li><Link to="/contact"><a>Tour Booking Now</a></Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About us</Link></li>
+                    <li><Link to="/service">Our Service</Link></li>
+                    <li><Link to="/contact">Terms of Service</Link></li>
+                    <li><Link to="/contact">Tour Booking Now</Link></li>
                   </ul>
                 </div>
               </div>
@@ -206,7 +205,7 @@ function Footer() {
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6">
               <p className="copyright-text">
-                Copyright 2025 <Link to="/"><a>Tourm</a></Link>. All Rights
+                Copyright 2025 <Link to="/">Tourm</Link>. All Rights
                 Reserved.
               </p>
             </div>
