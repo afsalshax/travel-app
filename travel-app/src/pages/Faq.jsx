@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 
 function Faq() {
   return (
@@ -8,7 +10,7 @@ function Faq() {
         <div className="breadcumb-content">
           <h1 className="breadcumb-title">FAQs</h1>
           <ul className="breadcumb-menu">
-            <li><a href="home-travel.html">Home</a></li>
+            <li><Link to="/"><a>Home</a></Link></li>
             <li>FAQs</li>
           </ul>
         </div>

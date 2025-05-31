@@ -7,6 +7,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import "swiper/css/effect-coverflow";
 // import "./BrandSlider.css"; // Custom CSS for hover
+import { Link } from 'react-router-dom';
+
 
 function Home() {
   const blogPosts = [
@@ -164,8 +166,8 @@ function Home() {
                     Natural Wonder of the world
                   </h1>
                   <div className="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
-                    <a href="/tour" className="th-btn th-icon">Explore Tours</a>
-                    <a href="/service" className="th-btn style2 th-icon">Our Services</a>
+                  <Link to="/tour">  <a className="th-btn th-icon">Explore Tours</a></Link>
+                   <Link to="/service"> <a className="th-btn style2 th-icon">Our Services</a></Link>
                   </div>
                 </div>
               </div>
@@ -192,8 +194,8 @@ function Home() {
                     Let’s make your best trip with us
                   </h1>
                   <div className="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
-                    <a href="/tour" className="th-btn th-icon">Explore Tours</a>
-                    <a href="/service" className="th-btn style2 th-icon">Our Services</a>
+                    <Link to="/tour"><a  className="th-btn th-icon">Explore Tours</a></Link>
+                   <Link to="/service"> <a className="th-btn style2 th-icon">Our Services</a></Link>
                   </div>
                 </div>
               </div>
@@ -220,8 +222,8 @@ function Home() {
                     Explore beauty of the whole world
                   </h1>
                   <div className="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
-                    <a href="/tour" className="th-btn th-icon">Explore Tours</a>
-                    <a href="/service" className="th-btn style2 th-icon">Our Services</a>
+                   <Link to="/tour"> <a  className="th-btn th-icon">Explore Tours</a></Link>
+                  <Link to="/service">  <a className="th-btn style2 th-icon">Our Services</a></Link>
                   </div>
                 </div>
               </div>
@@ -398,9 +400,9 @@ function Home() {
                       <img src={`assets/img/category/${item.img}`} alt="Image" />
                     </div>
                     <h3 className="box-title">
-                      <a href="/destination">{item.title}</a>
+                     <Link to="/destination"> <a>{item.title}</a></Link>
                     </h3>
-                    <a className="line-btn" href="/destination">See more</a>
+                   <Link to="/destination"> <a className="line-btn">See more</a></Link>
                   </div>
                 </SwiperSlide>
               ))
@@ -447,14 +449,14 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                          <a href="/destination-details">Maldives</a>
+                         <Link to="/destination-details"> <a>Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                        <a href="/destination-details" className="th-btn style2 th-icon">
+                        <Link to="/destination-details"><a className="th-btn style2 th-icon">
                           View All
-                        </a>
+                        </a></Link>
                       </div>
                     </div>
                   </div>
@@ -467,14 +469,14 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                          <a href="/destination-details">Maldives</a>
+                         <Link to="/destinaton-details"> <a>Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                        <a href="/destination-details" className="th-btn style2 th-icon">
+                       <Link to="/destinaton-details"> <a className="th-btn style2 th-icon">
                           View All
-                        </a>
+                        </a></Link>
                       </div>
                     </div>
                   </div>
@@ -487,14 +489,14 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                          <a href="/destination-details">Maldives</a>
+                          <Link to="/destinaton-details"><a>Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                        <a href="/destination-details" className="th-btn style2 th-icon">
+                        <Link to="/destinaton-details"><a className="th-btn style2 th-icon">
                           View All
-                        </a>
+                        </a></Link>
                       </div>
                     </div>
                   </div>
@@ -507,14 +509,14 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                          <a href="/destination-details">Maldives</a>
+                         <Link to="/destinaton-details"> <a>Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                        <a href="/destination-details" className="th-btn style2 th-icon">
+                        <Link to="/destinaton-details"><a className="th-btn style2 th-icon">
                           View All
-                        </a>
+                        </a></Link>
                       </div>
                     </div>
                   </div>
@@ -527,14 +529,14 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                          <a href="/destination-details">Maldives</a>
+                          <Link to="/destinaton-details"><a >Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                        <a href="/destination-details" className="th-btn style2 th-icon">
+                       <Link to="/destinaton-details"> <a className="th-btn style2 th-icon">
                           View All
-                        </a>
+                        </a></Link>
                       </div>
                     </div>
                   </div>
@@ -547,14 +549,14 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                          <a href="/destination-details">Maldives</a>
+                         <Link to="/destinaton-details"> <a >Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                        <a href="/destination-details" className="th-btn style2 th-icon">
+                       <Link to="/destinaton-details">  <a className="th-btn style2 th-icon">
                           View All
-                        </a>
+                        </a></Link>
                       </div>
                     </div>
                   </div>
@@ -629,8 +631,8 @@ function Home() {
                   </div>
                 </div>
                 <div className="mt-35">
-                  <a href="/about" className="th-btn style3 th-icon"
-                  >Learn More</a>
+                  <Link to="/about"> <a  className="th-btn style3 th-icon"
+                  >Learn More</a></Link>
                 </div>
               </div>
             </div>
@@ -795,7 +797,7 @@ function Home() {
                     </div>
                     <div className="tour-content">
                       <h3 className="box-title">
-                        <a href="/tour-details">{title}</a>
+                        <Link to="/tour-details"> <a >{title}</a></Link>
                       </h3>
                       <div className="tour-rating">
                         <div className="star-rating" role="img" aria-label={`Rated ${rating} out of 5`}>
@@ -804,9 +806,9 @@ function Home() {
                             <span className="rating">{ratingCount}</span>(4.8 Rating)
                           </span>
                         </div>
-                        <a href="/tour-details" className="woocommerce-review-link">
+                       <Link to="/tour-details"> <a  className="woocommerce-review-link">
                           (<span className="count">{ratingCount}</span> Rating)
-                        </a>
+                        </a></Link>
                       </div>
                       <h4 className="tour-box_price">
                         <span className="currency">{price}</span>/Person
@@ -816,9 +818,9 @@ function Home() {
                           <i className="fa-light fa-clock"></i>
                           {days} Days
                         </span>
-                        <a href="/contact" className="th-btn style4 th-icon">
+                       <Link to="/contact"> <a className="th-btn style4 th-icon">
                           Book Now
-                        </a>
+                        </a></Link>
                       </div>
                     </div>
                   </div>
@@ -1264,8 +1266,8 @@ function Home() {
                 </div>
               </div>
               <div className="col-md-auto">
-                <a href="/blog" className="th-btn style4 th-icon"
-                >See More Articles</a>
+              <Link to="/blog">  <a className="th-btn style4 th-icon"
+                >See More Articles</a></Link>
               </div>
             </div>
           </div>
@@ -1292,8 +1294,8 @@ function Home() {
                       </div>
                       <div className="blog-box_content">
                         <div className="blog-meta">
-                          <a className="author" href="/blog">{post.date}</a>
-                          <a href="/blog">{post.readTime}</a>
+                         <Link to="/blog"> <a className="author" >{post.date}</a></Link>
+                         <Link to="/blog"> <a>{post.readTime}</a></Link>
                         </div>
                         <h3 className="box-title">
                           <a href={post.link}>{post.title}</a>

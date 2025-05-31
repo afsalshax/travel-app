@@ -22,8 +22,9 @@ import Cursorfollower from './components/Cursor-follower'
 function App() {
   return (
     <div>
-      <Header />
+
       <BrowserRouter>
+            <Header />
             <Cursorfollower/>
         <Routes>
           <Route path='/' element={<Home />}></Route>
@@ -43,8 +44,9 @@ function App() {
           <Route path='/tour-guider-details' element={<Tourguiderdetails />}></Route>
 
         </Routes>
+              <Footer />
       </BrowserRouter>
-      <Footer />
+
     </div>
   )
 }

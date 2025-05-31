@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import "swiper/css/effect-coverflow";
+import { Link } from 'react-router-dom';
 
 function About() {
   const brands = [
@@ -73,7 +74,7 @@ function About() {
           <div className="breadcumb-content">
             <h1 className="breadcumb-title">About Tourm</h1>
             <ul className="breadcumb-menu">
-              <li><a href="home-travel.html">Home</a></li>
+              <li><Link to="/"><a>Home</a></Link></li>
               <li>About Tourm</li>
             </ul>
           </div>
@@ -158,8 +159,10 @@ function About() {
                   </div>
                 </div>
                 <div className="mt-35">
-                  <a href="/contact" className="th-btn style3 th-icon"
-                  >Contact With Us</a>
+                  <Link to="/contact">
+                    <a className="th-btn style3 th-icon"
+                    >Contact With Us</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -214,11 +217,13 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="/service-details">Photo Shoot</a>
+                    <Link to="/service-details"><a>Photo Shoot</a></Link>
                   </h3>
                   <p className="destination-text">20 Listing</p>
-                  <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                 <Link to="/contact">
+                    <a className="th-btn style4 th-icon"
+                    >Book Now</a>
+                 </Link>
                 </div>
               </div>
             </div>
@@ -232,11 +237,13 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="/service-details">Tour Guide</a>
+                    <Link to="/service-details"><a>Tour Guide</a></Link>
                   </h3>
                   <p className="destination-text">22 Listing</p>
-                  <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                 <Link to="/contact">
+                    <a className="th-btn style4 th-icon"
+                    >Book Now</a>
+                 </Link>
                 </div>
               </div>
             </div>
@@ -250,11 +257,13 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="/service-details">Cozy Event</a>
+                   <Link to="/service-details"> <a>Cozy Event</a></Link>
                   </h3>
                   <p className="destination-text">23 Listing</p>
-                  <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                 <Link to="/contact">
+                    <a className="th-btn style4 th-icon"
+                    >Book Now</a>
+                 </Link>
                 </div>
               </div>
             </div>
@@ -268,11 +277,13 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="/service-details">Interesting Rest</a>
+                    <Link to="/service-details"><a>Interesting Rest</a></Link>
                   </h3>
                   <p className="destination-text">24 Listing</p>
-                  <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                  <Link to="/contact">
+                    <a className="th-btn style4 th-icon"
+                    >Book Now</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -286,11 +297,13 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="/service-details">Kayaking</a>
+                    <Link to="/service-details"><a>Kayaking</a></Link>
                   </h3>
                   <p className="destination-text">25 Listing</p>
-                  <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                  <Link to="/contact">
+                    <a className="th-btn style4 th-icon"
+                    >Book Now</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -304,11 +317,13 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="/service-details">Safe Flight</a>
+                    <Link to="/service-details"><a>Safe Flight</a></Link>
                   </h3>
                   <p className="destination-text">26 Listing</p>
-                  <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                  <Link to="/contact">
+                    <a className="th-btn style4 th-icon"
+                    >Book Now</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -322,11 +337,13 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="/service-details">Entertainment</a>
+                    <Link to="//service-details"><a>Entertainment</a></Link>
                   </h3>
                   <p className="destination-text">27 Listing</p>
-                  <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                 <Link to="/contact">
+                    <a className="th-btn style4 th-icon"
+                    >Book Now</a>
+                 </Link>
                 </div>
               </div>
             </div>
@@ -340,11 +357,13 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="/service-details">Delicisious Food</a>
+                    <Link to="/service-details"><a>Delicisious Food</a></Link>
                   </h3>
                   <p className="destination-text">28 Listing</p>
-                  <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                 <Link to="/contact">
+                    <a  className="th-btn style4 th-icon"
+                    >Book Now</a>
+                 </Link>
                 </div>
               </div>
             </div>
@@ -551,7 +570,7 @@ function About() {
               {brands.map((img, idx) => (
                 <SwiperSlide key={idx}>
                   <div className="brand-box">
-                    <a href="#">
+                    <a>
                       <img
                         className="original"
                         src={`assets/img/brand/${img}`}

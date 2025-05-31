@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -36,9 +37,11 @@ function Footer() {
               <div className="widget footer-widget">
                 <div className="th-widget-about">
                   <div className="about-logo">
-                    <a href="/"
-                      ><img src="assets/img/logo-white.svg" alt="Tourm"
-                    /></a>
+                <Link to="/">
+                      <a
+                        ><img src="assets/img/logo-white.svg" alt="Tourm"
+                      /></a>
+                </Link>
                   </div>
                   <p className="about-text">
                     Rapidiously myocardinate cross-platform intellectual capital
@@ -64,11 +67,11 @@ function Footer() {
                 <h3 className="widget_title">Quick Links</h3>
                 <div className="menu-all-pages-container">
                   <ul className="menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About us</a></li>
-                    <li><a href="/service">Our Service</a></li>
-                    <li><a href="/contact">Terms of Service</a></li>
-                    <li><a href="/contact">Tour Booking Now</a></li>
+                    <li><Link to="/"><a>Home</a></Link></li>
+                    <li><Link to="/about"><a>About us</a></Link></li>
+                    <li><Link to="/service"><a>Our Service</a></Link></li>
+                    <li><Link to="/contact"><a>Terms of Service</a></Link></li>
+                    <li><Link to="/contact"><a>Tour Booking Now</a></Link></li>
                   </ul>
                 </div>
               </div>
@@ -203,7 +206,7 @@ function Footer() {
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6">
               <p className="copyright-text">
-                Copyright 2025 <a href="/">Tourm</a>. All Rights
+                Copyright 2025 <Link to="/"><a>Tourm</a></Link>. All Rights
                 Reserved.
               </p>
             </div>

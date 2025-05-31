@@ -6,6 +6,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import "swiper/css/effect-coverflow";
+import { Link } from 'react-router-dom';
+
 
 function Service() {
   
@@ -149,7 +151,7 @@ const tours = [
         <div className="breadcumb-content">
           <h1 className="breadcumb-title">Services</h1>
           <ul className="breadcumb-menu">
-            <li><a href="/">Home</a></li>
+            <Link to="/"><li><a>Home</a></li></Link>
             <li>Services</li>
           </ul>
         </div>
@@ -171,11 +173,11 @@ const tours = [
               </div>
               <div className="destination-content">
                 <h3 className="box-title">
-                  <a href="/service-details">Photo Shoot</a>
+                  <Link to="/service-details"><a >Photo Shoot</a></Link>
                 </h3>
                 <p className="destination-text">20 Listing</p>
-                <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                <Link to="/contact"><a className="th-btn style4 th-icon"
+                  >Book Now</a></Link>
               </div>
             </div>
           </div>
@@ -189,11 +191,11 @@ const tours = [
               </div>
               <div className="destination-content">
                 <h3 className="box-title">
-                  <a href="/service-details">Tour Guide</a>
+                 <Link to="/service-details"> <a>Tour Guide</a></Link>
                 </h3>
                 <p className="destination-text">22 Listing</p>
-                <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+              <Link to="/contact">  <a  className="th-btn style4 th-icon"
+                  >Book Now</a></Link>
               </div>
             </div>
           </div>
@@ -207,11 +209,11 @@ const tours = [
               </div>
               <div className="destination-content">
                 <h3 className="box-title">
-                  <a href="/service-details">Cozy Event</a>
+                 <Link to="/service-details"> <a >Cozy Event</a></Link>
                 </h3>
                 <p className="destination-text">23 Listing</p>
-                <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+                <Link to="/contact"><a className="th-btn style4 th-icon"
+                  >Book Now</a></Link>
               </div>
             </div>
           </div>
@@ -225,11 +227,11 @@ const tours = [
               </div>
               <div className="destination-content">
                 <h3 className="box-title">
-                  <a href="/service-details">Interesting Rest</a>
+                <Link to="/service-details">  <a>Interesting Rest</a></Link>
                 </h3>
                 <p className="destination-text">24 Listing</p>
-                <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+               <Link to="/contact"> <a className="th-btn style4 th-icon"
+                  >Book Now</a></Link>
               </div>
             </div>
           </div>
@@ -243,11 +245,11 @@ const tours = [
               </div>
               <div className="destination-content">
                 <h3 className="box-title">
-                  <a href="/service-details">Kayaking</a>
+                <Link to="/service-details">  <a >Kayaking</a></Link>
                 </h3>
                 <p className="destination-text">25 Listing</p>
-                <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+              <Link to="/contact">  <a className="th-btn style4 th-icon"
+                  >Book Now</a></Link>
               </div>
             </div>
           </div>
@@ -261,11 +263,11 @@ const tours = [
               </div>
               <div className="destination-content">
                 <h3 className="box-title">
-                  <a href="/service-details">Safe Flight</a>
+                 <Link to="/service-details"> <a >Safe Flight</a></Link>
                 </h3>
                 <p className="destination-text">26 Listing</p>
-                <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+              <Link to="/contact">  <a className="th-btn style4 th-icon"
+                  >Book Now</a></Link>
               </div>
             </div>
           </div>
@@ -279,11 +281,11 @@ const tours = [
               </div>
               <div className="destination-content">
                 <h3 className="box-title">
-                  <a href="/service-details">Entertainment</a>
+                 <Link to="/service-details"> <a>Entertainment</a></Link>
                 </h3>
                 <p className="destination-text">27 Listing</p>
-                <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+               <Link to="/contact"> <a  className="th-btn style4 th-icon"
+                  >Book Now</a></Link>
               </div>
             </div>
           </div>
@@ -297,11 +299,11 @@ const tours = [
               </div>
               <div className="destination-content">
                 <h3 className="box-title">
-                  <a href="/service-details">Delicisious Food</a>
+                  <Link to="/service-details"><a >Delicisious Food</a></Link>
                 </h3>
                 <p className="destination-text">28 Listing</p>
-                <a href="/contact" className="th-btn style4 th-icon"
-                  >Book Now</a>
+              <Link to="/contact">  <a className="th-btn style4 th-icon"
+                  >Book Now</a></Link>
               </div>
             </div>
           </div>
@@ -472,7 +474,7 @@ const tours = [
                     </div>
                     <div className="tour-content">
                       <h3 className="box-title">
-                        <a href="/tour-details">{title}</a>
+                        <Link to="/tour-details"><a>{title}</a></Link>
                       </h3>
                       <div className="tour-rating">
                         <div className="star-rating" role="img" aria-label={`Rated ${rating} out of 5`}>
@@ -481,9 +483,9 @@ const tours = [
                             <span className="rating">{ratingCount}</span>(4.8 Rating)
                           </span>
                         </div>
-                        <a href="/tour-details" className="woocommerce-review-link">
+                       <Link to="/tour-details"> <a  className="woocommerce-review-link">
                           (<span className="count">{ratingCount}</span> Rating)
-                        </a>
+                        </a></Link>
                       </div>
                       <h4 className="tour-box_price">
                         <span className="currency">{price}</span>/Person
@@ -493,9 +495,9 @@ const tours = [
                           <i className="fa-light fa-clock"></i>
                           {days} Days
                         </span>
-                        <a href="/contact" className="th-btn style4 th-icon">
+                     <Link to="/contact">   <a className="th-btn style4 th-icon">
                           Book Now
-                        </a>
+                        </a></Link>
                       </div>
                     </div>
                   </div>
@@ -528,7 +530,7 @@ const tours = [
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">
-                    <a href="/tour-details">{title}</a>
+                   <Link to="/tour-details"> <a>{title}</a></Link>
                   </h3>
                   <div className="tour-rating">
                     <div
@@ -541,9 +543,9 @@ const tours = [
                         <span className="rating">{ratingCount}</span>(4.8 Rating)
                       </span>
                     </div>
-                    <a href="/tour-details" className="woocommerce-review-link">
+                    <Link to="/tour-details"><a className="woocommerce-review-link">
                       (<span className="count">{ratingCount}</span> Rating)
-                    </a>
+                    </a></Link>
                   </div>
                   <h4 className="tour-box_price">
                     <span className="currency">{price}</span>/Person
@@ -553,9 +555,9 @@ const tours = [
                       <i className="fa-light fa-clock"></i>
                       {days} Days
                     </span>
-                    <a href="/tour-guider-details" className="th-btn style4 th-icon">
+                    <Link to="/tour-guider-details"><a className="th-btn style4 th-icon">
                       Book Now
-                    </a>
+                    </a></Link>
                   </div>
                 </div>
               </div>
@@ -589,7 +591,7 @@ const tours = [
               </div>
               <div className="tour-content">
                 <h3 className="box-title">
-                  <a href="/tour-details">{tour.title}</a>
+                 <Link to="/tour-details"> <a>{tour.title}</a></Link>
                 </h3>
                 <div className="tour-rating">
                   <div
@@ -603,12 +605,12 @@ const tours = [
                       {tour.rating} Rating)
                     </span>
                   </div>
-                  <a
-                    href="/tour-details"
+                 <Link to="/tour-details"> <a
+                    
                     className="woocommerce-review-link"
                   >
                     (<span className="count">{tour.rating}</span> Rating)
-                  </a>
+                  </a></Link>
                 </div>
                 <h4 className="tour-box_price">
                   <span className="currency">${tour.price.toFixed(2)}</span>
@@ -618,12 +620,12 @@ const tours = [
                   <span>
                     <i className="fa-light fa-clock"></i> {tour.duration}
                   </span>
-                  <a
-                    href="/tour-guider-details"
+               <Link to="/tour-guider-details">   <a
+                  
                     className="th-btn style4 th-icon"
                   >
                     Book Now
-                  </a>
+                  </a></Link>
                 </div>
               </div>
             </div>
@@ -672,8 +674,8 @@ const tours = [
                 </div>
               </div>
               <div className="price-btn">
-                <a href="/contact" className="th-btn style3 w-100"
-                  >Get Started</a>
+               <Link to="/contact"> <a className="th-btn style3 w-100"
+                  >Get Started</a></Link>
               </div>
             </div>
           </div>
@@ -706,8 +708,8 @@ const tours = [
                 </div>
               </div>
               <div className="price-btn">
-                <a href="/contact" className="th-btn style3 w-100"
-                  >Get Started</a>
+               <Link to="/contact"> <a className="th-btn style3 w-100"
+                  >Get Started</a></Link>
               </div>
             </div>
           </div>
@@ -740,8 +742,8 @@ const tours = [
                 </div>
               </div>
               <div className="price-btn">
-                <a href="/contact" className="th-btn style3 w-100"
-                  >Get Started</a>
+             <Link to="/contact">   <a  className="th-btn style3 w-100"
+                  >Get Started</a></Link>
               </div>
             </div>
           </div>

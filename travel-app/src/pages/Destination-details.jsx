@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 
 function Destinationdetails() {
   return (
@@ -8,7 +10,7 @@ function Destinationdetails() {
         <div className="breadcumb-content">
           <h1 className="breadcumb-title">Destination Maldives</h1>
           <ul className="breadcumb-menu">
-            <li><a href="/">Home</a></li>
+            <li><Link to="/"><a>Home</a></Link></li>
             <li>Destination Details</li>
           </ul>
         </div>
@@ -27,7 +29,7 @@ function Destinationdetails() {
               </div>
               <div className="page-content d-block">
                 <div className="page-meta mt-50 mb-45">
-                  <a className="page-tag" href="/tour">Featured</a>
+                  <Link to="/tour"><a className="page-tag">Featured</a></Link>
                   <span className="ratting"
                     ><i className="fa-sharp fa-solid fa-star"></i><span>4.8</span></span>
                 </div>
@@ -380,41 +382,41 @@ function Destinationdetails() {
                 <h3 className="widget_title">Categories</h3>
                 <ul>
                   <li>
-                    <a href="/blog"
+                   <Link to="/blog"> <a
                       ><img src="assets/img/theme-img/map.svg" alt="" />City
-                      Tour</a>
+                      Tour</a></Link>
                     <span>(8)</span>
                   </li>
                   <li>
-                    <a href="/blog"
+                    <Link to="/blog"><a
                       ><img src="assets/img/theme-img/map.svg" alt="" />Beach
-                      Tours</a>
+                      Tours</a></Link>
                     <span>(6)</span>
                   </li>
                   <li>
-                    <a href="/blog"
+                   <Link to="/blog"> <a
                       ><img src="assets/img/theme-img/map.svg" alt="" />Wildlife
-                      Tours</a>
+                      Tours</a></Link>
                     <span>(2)</span>
                   </li>
                   <li>
-                    <a href="/blog"
+                   <Link to="/blog"> <a 
                       ><img src="assets/img/theme-img/map.svg" alt="" />News &
-                      Tips</a>
+                      Tips</a></Link>
                     <span>(7)</span>
                   </li>
                   <li>
-                    <a href="/blog"
+                   <Link to="/blog"> <a
                       ><img
                         src="assets/img/theme-img/map.svg"
                         alt=""
-                      />Adventure Tours</a>
+                      />Adventure Tours</a></Link>
                     <span>(9)</span>
                   </li>
                   <li>
-                    <a href="/blog"
+                  <Link to="/blog">  <a
                       ><img src="assets/img/theme-img/map.svg" alt="" />Mountain
-                      Tours</a>
+                      Tours</a></Link>
                     <span>(10)</span>
                   </li>
                 </ul>
@@ -424,58 +426,58 @@ function Destinationdetails() {
                 <div className="recent-post-wrap">
                   <div className="recent-post">
                     <div className="media-img">
-                      <a href="/blog-details"
+                     <Link to="/blog-details"> <a 
                         ><img
                           src="assets/img/blog/recent-post-1-1.jpg"
                           alt="Blog Image"
-                      /></a>
+                      /></a></Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                        <a className="text-inherit" href="/blog-details"
-                          >Exploring The Green Spaces Of the island maldives</a>
+                       <Link to="/blog-details"> <a className="text-inherit" 
+                          >Exploring The Green Spaces Of the island maldives</a></Link>
                       </h4>
                       <div className="recent-post-meta">
-                        <a href="/blog"
-                          ><i className="fa-regular fa-calendar"></i>22/6/ 2025</a>
+                        <Link to="/blog"><a 
+                          ><i className="fa-regular fa-calendar"></i>22/6/ 2025</a></Link>
                       </div>
                     </div>
                   </div>
                   <div className="recent-post">
                     <div className="media-img">
-                      <a href="/blog-details"
+                     <Link to="/blog-details"> <a
                         ><img
                           src="assets/img/blog/recent-post-1-2.jpg"
                           alt="Blog Image"
-                      /></a>
+                      /></a></Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                        <a className="text-inherit" href="/blog-details"
-                          >Harmony With Nature Of Belgium Tour and travle</a>
+                       <Link to="/blog-details"> <a className="text-inherit" 
+                          >Harmony With Nature Of Belgium Tour and travle</a></Link>
                       </h4>
                       <div className="recent-post-meta">
-                        <a href="/blog"
-                          ><i className="fa-regular fa-calendar"></i>25/6/ 2025</a>
+                        <Link to="/blog"><a 
+                          ><i className="fa-regular fa-calendar"></i>25/6/ 2025</a></Link>
                       </div>
                     </div>
                   </div>
                   <div className="recent-post">
                     <div className="media-img">
-                      <a href="/blog-details"
+                      <Link to="/blog-details"><a
                         ><img
                           src="assets/img/blog/recent-post-1-3.jpg"
                           alt="Blog Image"
-                      /></a>
+                      /></a></Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                        <a className="text-inherit" href="/blog-details"
-                          >Exploring The Green Spaces Of Realar Residence</a>
+                      <Link to="/blog-details">  <a className="text-inherit"
+                          >Exploring The Green Spaces Of Realar Residence</a></Link>
                       </h4>
                       <div className="recent-post-meta">
-                        <a href="/blog"
-                          ><i className="fa-regular fa-calendar"></i>27/6/ 2025</a>
+                        <Link to="/blog"><a
+                          ><i className="fa-regular fa-calendar"></i>27/6/ 2025</a></Link>
                       </div>
                     </div>
                   </div>
@@ -484,11 +486,11 @@ function Destinationdetails() {
               <div className="widget widget_tag_cloud">
                 <h3 className="widget_title">Popular Tags</h3>
                 <div className="tagcloud">
-                  <a href="/blog">Tour</a>
-                  <a href="/blog">Adventure</a>
-                  <a href="/blog">Rent</a> <a href="/blog">Innovate</a>
-                  <a href="/blog">Hotel</a> <a href="/blog">Modern</a>
-                  <a href="/blog">Luxury</a> <a href="/blog">Travel</a>
+                 <Link to="/blog"> <a>Tour</a></Link>
+                 <Link to="/blog"> <a>Adventure</a></Link>
+                 <Link to="/blog"> <a>Rent</a></Link> <Link to="/blog"><a>Innovate</a></Link>
+                  <Link to="/blog"><a>Hotel</a></Link> <Link to="/blog"><a>Modern</a></Link>
+                  <Link to="/blog"><a>Luxury</a></Link> <Link to="/blog"><a>Travel</a></Link>
                 </div>
               </div>
               <div
@@ -508,8 +510,8 @@ function Destinationdetails() {
                       <a className="offter-num" href="%2b256214203215.html"
                         >+256 214 203 215</a>
                     </div>
-                    <a href="/contact" className="th-btn style2 th-icon"
-                      >Read More</a>
+                   <Link to="/contact"> <a className="th-btn style2 th-icon"
+                      >Read More</a></Link>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -14,34 +15,34 @@ function Header() {
           <i className="far fa-palette"></i>STYLE SWITCHER
         </h4>
         <div className="color-switch-btns">
-          <button style={{color:"#684DF4"}}>
+          <button style={{ color: "#684DF4" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button style={{color:"#086ad8"}}>
+          <button style={{ color: "#086ad8" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button    style={{color:"#FC3737"}}>
+          <button style={{ color: "#FC3737" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button   style={{color:"#8a2be2"}}>
+          <button style={{ color: "#8a2be2" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button style={{color:"#104CBA"}}>
+          <button style={{ color: "#104CBA" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button  style={{color:"#ffbf4f"}}>
+          <button style={{ color: "#ffbf4f" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button  style={{color:"#323F7C"}}>
+          <button style={{ color: "#323F7C" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button  style={{color:"#0e2bc5"}}>
+          <button style={{ color: "#0e2bc5" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button  style={{color:"#F79C53"}}>
+          <button style={{ color: "#F79C53" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
-          <button  style={{color:"#6957af"}}>
+          <button style={{ color: "#6957af" }}>
             <i className="fa-solid fa-droplet"></i>
           </button>
         </div>
@@ -75,9 +76,8 @@ function Header() {
           <div className="widget">
             <div className="th-widget-about">
               <div className="about-logo">
-                <a href="/"
-                ><img src="assets/img/logo2.svg" alt="Tourm"
-                  /></a>
+                   <Link to="/"><img src="/assets/img/logo2.svg" alt="Tourm" />
+            </Link>
               </div>
               <p className="about-text">
                 Rapidiously myocardinate cross-platform intellectual capital
@@ -100,39 +100,37 @@ function Header() {
             <div className="recent-post-wrap">
               <div className="recent-post">
                 <div className="media-img">
-                  <a href="/blog-details"
-                  ><img
+                <Link to="/blog-details"><img
                       src="assets/img/blog/recent-post-1-1.jpg"
                       alt="Blog Image"
-                    /></a>
+                    /></Link>
                 </div>
                 <div className="media-body">
                   <div className="recent-post-meta">
-                    <a href="/blog"
-                    ><i className="far fa-calendar"></i>24 Jun , 2025</a>
+                    <Link to="/blog"><i className="far fa-calendar"></i>24 Jun , 2025</Link>
                   </div>
                   <h4 className="post-title">
-                    <a className="text-inherit" href="/blog-details"
-                    >Where Vision Meets Concrete Reality</a>
+                    <Link to="/blog-details">
+                      <a className="text-inherit"
+                      >Where Vision Meets Concrete Reality</a>
+                    </Link>
                   </h4>
                 </div>
               </div>
               <div className="recent-post">
                 <div className="media-img">
-                  <a href="/blog-details"
-                  ><img
-                      src="assets/img/blog/recent-post-1-2.jpg"
+                  <Link to="/blog-details"><img
+                      src="assets/img/blog/recent-post-1-1.jpg"
                       alt="Blog Image"
-                    /></a>
+                    /></Link>
                 </div>
                 <div className="media-body">
                   <div className="recent-post-meta">
-                    <a href="/blog"
-                    ><i className="far fa-calendar"></i>22 Jun , 2025</a>
+                   <Link to="/blog"><i className="far fa-calendar"></i>24 Jun , 2025</Link>
                   </div>
                   <h4 className="post-title">
-                    <a className="text-inherit" href="/blog-details"
-                    >Raising the Bar in Construction.</a>
+                    <Link to="/blog-details"><a className="text-inherit"
+                    >Raising the Bar in Construction.</a></Link>
                   </h4>
                 </div>
               </div>
@@ -194,46 +192,47 @@ function Header() {
         <div className="th-menu-area text-center">
           <button className="th-menu-toggle"><i className="fal fa-times"></i></button>
           <div className="mobile-logo">
-            <a href="/">
-              <img src="/assets/img/logo2.svg" alt="Tourm" />
-            </a>
+
+            <Link to="/"><img src="/assets/img/logo2.svg" alt="Tourm" />
+            </Link>
+
           </div>
           <div className="th-mobile-menu">
             <ul>
               <li className="menu-item-has-children mega-menu-wrap">
-                <a className="active" href="/">Home</a>
+                <Link to="/"><a className="active"></a></Link>
               </li>
-              <li><a href="/about">About Us</a></li>
+              <li><Link to="/about"><a>About Us</a></Link></li>
               <li className="menu-item-has-children">
-                <a href="#">Destination</a>
+                <a>Destination</a>
                 <ul className="sub-menu">
-                  <li><a href="/destination">Destination</a></li>
+                  <li><Link to="/destination"><a>Destination</a></Link></li>
                   <li>
-                    <a href="/destination-details">Destination Details</a>
+                   <Link to="/destination-details"> <a>Destination Details</a></Link>
                   </li>
                 </ul>
               </li>
               <li className="menu-item-has-children">
-                <a href="#">Service</a>
+                <a>Service</a>
                 <ul className="sub-menu">
-                  <li><a href="/service">Services</a></li>
-                  <li><a href="/service-details">Service Details</a></li>
+                  <li><Link to="/service"><a>Services</a></Link></li>
+                  <li><Link to="/service-details"><a>Service Details</a></Link></li>
                 </ul>
               </li>
               <li className="menu-item-has-children">
-                <a href="#">Activities</a>
+                <a>Activities</a>
                 <ul className="sub-menu">
-                  <li><a href="/activity">activities</a></li>
+                  <li><Link to="/activity"><a>activities</a></Link></li>
                   <li>
-                    <a href="/activities-details">activities Details</a>
+                   <Link to="/activities-details"><a>activities Details</a></Link>
                   </li>
                 </ul>
               </li>
               <li className="menu-item-has-children">
-                <a href="#">Pages</a>
+                <a>Pages</a>
                 <ul className="sub-menu">
                   <li className="menu-item-has-children">
-                    <a href="#">Shop</a>
+                    <a>Shop</a>
                     <ul className="sub-menu">
                       <li><a href="shop.html">Shop</a></li>
                       <li><a href="shop-details.html">Shop Details</a></li>
@@ -243,28 +242,28 @@ function Header() {
                     </ul>
                   </li>
                   <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="/tour">Our Tour</a></li>
-                  <li><a href="/tour-details">Tour Details</a></li>
+                  <li><Link to="/tour"><a>Our Tour</a></Link></li>
+                  <li><Link to="/tour-details"><a>Tour Details</a></Link></li>
                   <li><a href="resort.html">Resort page</a></li>
                   <li><a href="resort-details.html">Resort Details</a></li>
-                  <li><a href="/tour-details">Tour Details</a></li>
+                  <li><Link to="/tour-details"><a>Tour Details</a></Link></li>
                   <li><a href="tour-guide.html">Tour Guider</a></li>
                   <li>
-                    <a href="tour-guider-details.html">Tour Guider Details</a>
+                    <Link to="/tour-guider-details"><a>Tour Guider Details</a></Link>
                   </li>
-                  <li><a href="/faq">Faq Page</a></li>
-                  <li><a href="/price">Price Package</a></li>
-                  <li><a href="/error">Error Page</a></li>
+                  <li><Link to="/faq"><a>Faq Page</a></Link></li>
+                  <li><Link to="/price"><a>Price Package</a></Link></li>
+                  <li><Link to="/error"><a>Error Page</a></Link></li>
                 </ul>
               </li>
               <li className="menu-item-has-children">
                 <a href="#">Blog</a>
                 <ul className="sub-menu">
-                  <li><a href="/blog">Blog</a></li>
-                  <li><a href="/blog-details">Blog Details</a></li>
+                  <li><Link to="/blog"><a>Blog</a></Link></li>
+                  <li><Link to="/blog-details"><a>Blog Details</a></Link></li>
                 </ul>
               </li>
-              <li><a href="/contact">Contact us</a></li>
+              <li><Link to="/contact"><a>Contact us</a></Link></li>
             </ul>
           </div>
         </div>
@@ -302,10 +301,10 @@ function Header() {
                   <div className="header-links">
                     <ul>
                       <li className="d-none d-md-inline-block">
-                        <a href="/faq">FAQ</a>
+                        <Link to="/faq"><a>FAQ</a></Link>
                       </li>
                       <li className="d-none d-md-inline-block">
-                        <a href="/contact">Support</a>
+                        <Link to="/contact"><a>Support</a></Link>
                       </li>
                       <li>
                         <a href="#login-form" className="popup-content"
@@ -324,374 +323,58 @@ function Header() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <a href="/"
-                    ><img src="/assets/img/logo.svg" alt="Tourm"
-                      /></a>
+                  <Link to="/">
+                      <a
+                      ><img src="/assets/img/logo.svg" alt="Tourm"
+                        /></a>
+                  </Link>
                   </div>
                 </div>
                 <div className="col-auto me-xl-auto">
                   <nav className="main-menu d-none d-xl-inline-block">
                     <ul>
                       <li className="mega-menu-wrap">
-                        <a className="active" href="/">Home</a>
-                        {/* <ul className="mega-menu mega-menu-content">
-                        <li>
-                          <div className="container">
-                            <div className="row gy-4">
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/.jpg"
-                                      alt="Home One"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="/"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="/"
-                                      ><span>01.</span>Home Travel</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-tour.jpg"
-                                      alt="Home Two"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-/tour"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-/tour"
-                                      ><span>02.</span>Home Tour</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-agency.jpg"
-                                      alt="Home Three"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-agency.html"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-agency.html"
-                                      ><span>03.</span>Home Agency</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-yacht.jpg"
-                                      alt="Home Four"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-yacht.html"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-yacht.html"
-                                      ><span>04.</span>Home Yacht</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-beach.jpg"
-                                      alt="Home Five"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-beach.html"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-beach.html"
-                                      ><span>05.</span>Home Beach</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-resort.jpg"
-                                      alt="Home Six"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-resort.html"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-resort.html"
-                                      ><span>06.</span>Home resort</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-countryside-hotel.jpg"
-                                      alt="Home Six"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-countryside-hotel.html"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-countryside-hotel.html"
-                                      ><span>07.</span>Home Countryside Hotel</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-forest.jpg"
-                                      alt="Home Six"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-forest.html"
-                                        className="th-btn">View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-forest.html"
-                                      ><span>08.</span>Home Forest</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-hiking.jpg"
-                                      alt="Home Six"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-hiking.html"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-hiking.html"
-                                      ><span>09.</span>Home Hiking</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-hiking-2.jpg"
-                                      alt="Home ten"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-hiking-2.html"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-hiking-2.html"
-                                      ><span>10.</span>Home Hiking Style 2</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-cruise-tour.jpg"
-                                      alt="Home ten"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-cruise-/tour"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-cruise-/tour"
-                                      ><span>11.</span>Home Cruise Tour</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/-agency.jpg"
-                                      alt="Home ten"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-travel-agency.html"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-travel-agency.html"
-                                      ><span>12.</span>Home Travel Agency</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-museum-tour.jpg"
-                                      alt="Home ten"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-museum-/tour"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-museum-/tour"
-                                      ><span>13.</span>Home Museum Tour</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-worldwide-tour.jpg"
-                                      alt="Home ten"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-worldwide-/tour"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-worldwide-/tour"
-                                      ><span>14.</span>Home Worldwide Tour</a>
-                                  </h3>
-                                </div>
-                              </div>
-                              <div className="col-lg-3">
-                                <div className="mega-menu-box">
-                                  <div className="mega-menu-img">
-                                    <img
-                                      src="assets/img/pages/home-city-tour.jpg"
-                                      alt="Home ten"
-                                    />
-                                    <div className="btn-wrap">
-                                      <a
-                                        target="_blank"
-                                        href="home-city-/tour"
-                                        className="th-btn"
-                                        >View Demo</a>
-                                    </div>
-                                  </div>
-                                  <h3 className="mega-menu-title">
-                                    <a href="home-city-/tour"
-                                      ><span>15.</span>Home City Tour</a>
-                                  </h3>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul> */}
+                        <Link to="/"><a className="active">Home</a></Link>
                       </li>
-                      <li><a href="/about">About Us</a></li>
+                      <li><Link to="/about"><a>About Us</a></Link></li>
                       <li className="menu-item-has-children">
-                        <a href="#">Destination</a>
+                        <a>Destination</a>
                         <ul className="sub-menu">
-                          <li><a href="/destination">Destination</a></li>
+                          <li><Link to="/destination"><a>Destination</a></Link></li>
                           <li>
-                            <a href="/destination-details"
-                            >Destination Details</a>
+                            <Link to="/destination-details">
+                              <a
+                              >Destination Details</a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="#">Service</a>
+                        <a>Service</a>
                         <ul className="sub-menu">
-                          <li><a href="/service">Services</a></li>
+                          <li><Link to="/service"><a>Services</a></Link></li>
                           <li>
-                            <a href="/service-details">Service Details</a>
+                            <Link to = "/service-details"><a>Service Details</a></Link>
                           </li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="#">Activities</a>
+                        <a>Activities</a>
                         <ul className="sub-menu">
-                          <li><a href="/activity">activities</a></li>
+                          <li><Link to="/activity"><a>activities</a></Link></li>
                           <li>
-                            <a href="/activities-details"
-                            >activities Details</a>
+                            <Link to="/activities-details">
+                              <a
+                              >activities Details</a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="#">Pages</a>
+                        <a>Pages</a>
                         <ul className="sub-menu">
                           <li className="menu-item-has-children">
-                            <a href="#">Shop</a>
+                            <a>Shop</a>
                             <ul className="sub-menu">
                               <li><a href="shop.html">Shop</a></li>
                               <li>
@@ -703,31 +386,33 @@ function Header() {
                             </ul>
                           </li>
                           <li><a href="gallery.html">Gallery</a></li>
-                          <li><a href="/tour">Our Tour</a></li>
-                          <li><a href="/tour-details">Tour Details</a></li>
+                          <li><Link to="/tour"><a>Our Tour</a></Link></li>
+                          <li><Link to="/tour-details"><a>Tour Details</a></Link></li>
                           <li><a href="resort.html">Resort page</a></li>
                           <li>
                             <a href="resort-details.html">Resort Details</a>
                           </li>
-                          <li><a href="/tour-details">Tour Details</a></li>
+                          <li><Link to="/tour-details"><a>Tour Details</a></Link></li>
                           <li><a href="tour-guide.html">Tour Guider</a></li>
                           <li>
-                            <a href="tour-guider-details.html"
-                            >Tour Guider Details</a>
+                           <Link to="/tour-guider-details">
+                              <a
+                              >Tour Guider Details</a>
+                           </Link>
                           </li>
-                          <li><a href="/faq">Faq Page</a></li>
-                          <li><a href="/price">Price Package</a></li>
-                          <li><a href="/error">Error Page</a></li>
+                          <li><Link to="/faq"><a>Faq Page</a></Link></li>
+                          <li><Link to="/price"><a>Price Package</a></Link></li>
+                          <li><Link to="/error"><a>Error Page</a></Link></li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="#">Blog</a>
+                        <a>Blog</a>
                         <ul className="sub-menu">
-                          <li><a href="/blog">Blog</a></li>
-                          <li><a href="/blog-details">Blog Details</a></li>
+                          <li><Link to="/blog"><a>Blog</a></Link></li>
+                          <li><Link to="/blog-details"><a>Blog Details</a></Link></li>
                         </ul>
                       </li>
-                      <li><a href="/contact">Contact us</a></li>
+                      <li><Link to="/contact"><a>Contact us</a></Link></li>
                     </ul>
                   </nav>
                   <button type="button" className="th-menu-toggle d-block d-xl-none">
@@ -736,14 +421,16 @@ function Header() {
                 </div>
                 <div className="col-auto d-none d-xl-block">
                   <div className="header-button">
-                    <a href="/contact" className="th-btn style3 th-icon"
-                    >Book Now</a>
+                    <Link to="/contact">
+                      <a className="th-btn style3 th-icon"
+                      >Book Now</a>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              className="logo-bg" 
+              className="logo-bg"
               data-mask-src="assets/img/logo_bg_mask.png"
             ></div>
           </div>

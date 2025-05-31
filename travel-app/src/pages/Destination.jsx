@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 function Destination() {
   return (
@@ -8,7 +10,7 @@ function Destination() {
         <div className="breadcumb-content">
           <h1 className="breadcumb-title">Destination</h1>
           <ul className="breadcumb-menu">
-            <li><a href="/">Home</a></li>
+            <li><Link to="/"><a>Home</a></Link></li>
             <li>Destination</li>
           </ul>
         </div>
@@ -91,7 +93,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Dubai</a>
+                          <Link to="/destination-details"><a>Dubai</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -104,18 +106,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                         <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                         </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$980.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                          <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -127,7 +132,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Italy</a>
+                          <Link to="/destination-details"><a>Italy</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -140,18 +145,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                       <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                       </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$880.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                         <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                         </Link>
                         </div>
                       </div>
                     </div>
@@ -163,7 +171,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">France</a>
+                          <Link to="/destination-details"><a>France</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -176,18 +184,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                          <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                          </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$680.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                       <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                       </Link>
                         </div>
                       </div>
                     </div>
@@ -199,7 +210,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Maldives</a>
+                         <Link to="/destination-details"> <a>Maldives</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -212,18 +223,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                         <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                         </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$580.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                          <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -235,7 +249,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Belgium</a>
+                          <Link to="/destination-details"><a>Belgium</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -248,18 +262,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                          <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                          </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$480.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                        <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                        </Link>
                         </div>
                       </div>
                     </div>
@@ -271,7 +288,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Brazil</a>
+                          <Link to="/destination-details"><a>Brazil</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -284,18 +301,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                          <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                          </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$380.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                        <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                        </Link>
                         </div>
                       </div>
                     </div>
@@ -307,7 +327,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Spain</a>
+                         <Link to="/destination-details"> <a>Spain</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -320,18 +340,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                         <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                         </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$580.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                         <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                         </Link>
                         </div>
                       </div>
                     </div>
@@ -343,7 +366,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Greece</a>
+                          <Link to="/destination-details"><a>Greece</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -356,18 +379,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                         <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                         </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$680.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                          <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -379,7 +405,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Newziland</a>
+                          <Link to="/destination-details"><a>Newziland</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -392,18 +418,21 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
-                            className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                          <Link to="/destination-details">
+                            <a
+                              className="woocommerce-review-link"
+                              >(<span className="count">4.8</span> Rating)</a>
+                          </Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$780.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                          <Link to="/contact">
+                            <a className="th-btn style4 th-icon"
+                              >Book Now</a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -424,7 +453,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Dubai</a>
+                          <Link to="/destination-details"><a>Dubai</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -437,18 +466,18 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                           <Link to="/destination-details"><a
+                            
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$980.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                          <Link to="/contact"> <a className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -460,7 +489,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Italy</a>
+                           <Link to="/destination-details"><a>Italy</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -473,18 +502,18 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                          <Link to="/destination-details"> <a
+                           
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$880.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                          <Link to="/contact"> <a className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -496,7 +525,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">France</a>
+                          <Link to="/destination-details"> <a>France</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -509,18 +538,18 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                           <Link to="/destination-details"><a
+                           
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$680.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                         <Link to="/contact">  <a className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -532,7 +561,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Maldives</a>
+                         <Link to="/destination-details">  <a >Maldives</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -545,18 +574,18 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                          <Link to="/destination-details"> <a
+                          
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$580.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                           <Link to="/contact"><a  className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -568,7 +597,7 @@ function Destination() {
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Belgium</a>
+                          <Link to="/destination-details"> <a >Belgium</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -581,18 +610,18 @@ function Destination() {
                               5 based on <span className="rating">4.8</span>(4.8
 Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                          <Link to="/destination-details"> <a
+                          
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$480.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                           <Link to="/contact"><a className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -604,7 +633,7 @@ Rating)</span>
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Brazil</a>
+                          <Link to="/destination-details"> <a>Brazil</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -617,18 +646,18 @@ Rating)</span>
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                          <Link to="/destination-details"> <a
+                            
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$380.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                         <Link to="/contact">  <a className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -640,7 +669,7 @@ Rating)</span>
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Spain</a>
+                           <Link to="/destination-details"><a>Spain</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -653,18 +682,18 @@ Rating)</span>
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                          <Link to="/destination-details"> <a
+                           
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$580.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                         <Link to="/contact">  <a  className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -676,7 +705,7 @@ Rating)</span>
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Greece</a>
+                           <Link to="/destination-details"><a>Greece</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -689,18 +718,18 @@ Rating)</span>
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                           <Link to="/destination-details"><a
+                           
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$680.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                          <Link to="/contact"> <a  className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -712,7 +741,7 @@ Rating)</span>
                       </div>
                       <div className="tour-content">
                         <h3 className="box-title">
-                          <a href="/destination-details">Newziland</a>
+                          <Link to="/destination-details"> <a>Newziland</a></Link>
                         </h3>
                         <div className="tour-rating">
                           <div
@@ -725,18 +754,18 @@ Rating)</span>
                               5 based on <span className="rating">4.8</span>(4.8
                               Rating)</span>
                           </div>
-                          <a
-                            href="/destination-details"
+                          <Link to="/destination-details"> <a
+                           
                             className="woocommerce-review-link"
-                            >(<span className="count">4.8</span> Rating)</a>
+                            >(<span className="count">4.8</span> Rating)</a></Link>
                         </div>
                         <h4 className="tour-box_price">
                           <span className="currency">$780.00</span>/Person
                         </h4>
                         <div className="tour-action">
                           <span><i className="fa-light fa-clock"></i>7 Days</span>
-                          <a href="/contact" className="th-btn style4 th-icon"
-                            >Book Now</a>
+                           <Link to="/contact"><a  className="th-btn style4 th-icon"
+                            >Book Now</a></Link>
                         </div>
                       </div>
                     </div>
@@ -746,14 +775,14 @@ Rating)</span>
             </div>
             <div className="th-pagination text-center mt-60 mb-0">
               <ul>
-                <li><a className="active" href="/destination">1</a></li>
-                <li><a href="/destination">2</a></li>
-                <li><a href="/destination">3</a></li>
-                <li><a href="/destination">4</a></li>
+                <li> <Link to="/destination"><a className="active" >1</a></Link></li>
+                <li> <Link to="/destination"><a>2</a></Link></li>
+                <li> <Link to="/destination"><a>3</a></Link></li>
+                <li> <Link to="/destination"><a>4</a></Link></li>
                 <li>
-                  <a className="next-page" href="/destination"
+                  <Link to="/destination"> <a className="next-page" 
                     >Next <img src="assets/img/icon/arrow-right4.svg" alt=""
-                  /></a>
+                  /></a></Link>
                 </li>
               </ul>
             </div>
@@ -764,41 +793,41 @@ Rating)</span>
                 <h3 className="widget_title">Categories</h3>
                 <ul>
                   <li>
-                    <a href="/blog"
+                     <Link to="/blog"><a
                       ><img src="assets/img/theme-img/map.svg" alt="" />City
                       Tour</a>
-                    <span>(8)</span>
+                    <span>(8)</span></Link>
                   </li>
                   <li>
-                    <a href="/blog"
+                    <Link to="/blog"> <a
                       ><img src="assets/img/theme-img/map.svg" alt="" />Beach
                       Tours</a>
-                    <span>(6)</span>
+                    <span>(6)</span></Link>
                   </li>
                   <li>
-                    <a href="/blog"
+                     <Link to="/blog"><a
                       ><img src="assets/img/theme-img/map.svg" alt="" />Wildlife
-                      Tours</a>
+                      Tours</a></Link>
                     <span>(2)</span>
                   </li>
                   <li>
-                    <a href="/blog"
+                     <Link to="/blog"><a
                       ><img src="assets/img/theme-img/map.svg" alt="" />News &
-                      Tips</a>
+                      Tips</a></Link>
                     <span>(7)</span>
                   </li>
                   <li>
-                    <a href="/blog"
+                     <Link to="/blog"><a 
                       ><img
                         src="assets/img/theme-img/map.svg"
                         alt=""
-                      />Adventure Tours</a>
+                      />Adventure Tours</a></Link>
                     <span>(9)</span>
                   </li>
                   <li>
-                    <a href="/blog"
+                     <Link to="/blog"><a
                       ><img src="assets/img/theme-img/map.svg" alt="" />Mountain
-                      Tours</a>
+                      Tours</a></Link>
                     <span>(10)</span>
                   </li>
                 </ul>
@@ -808,58 +837,60 @@ Rating)</span>
                 <div className="recent-post-wrap">
                   <div className="recent-post">
                     <div className="media-img">
-                      <a href="/blog-details"
+                      <Link to="/blog-details"> <a 
                         ><img
                           src="assets/img/blog/recent-post-1-1.jpg"
                           alt="Blog Image"
-                      /></a>
+                      /></a></Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                        <a className="text-inherit" href="/blog-details"
-                          >Exploring The Green Spaces Of the island maldives</a>
+                        <Link to="/blog-details">
+                          <a className="text-inherit"
+                            >Exploring The Green Spaces Of the island maldives</a>
+                        </Link>
                       </h4>
                       <div className="recent-post-meta">
-                        <a href="/blog"
-                          ><i className="fa-regular fa-calendar"></i>22/6/ 2025</a>
+                        <Link to="/blog"><a 
+                          ><i className="fa-regular fa-calendar"></i>22/6/ 2025</a></Link>
                       </div>
                     </div>
                   </div>
                   <div className="recent-post">
                     <div className="media-img">
-                      <a href="/blog-details"
+                     <Link to="/blog-details"> <a 
                         ><img
                           src="assets/img/blog/recent-post-1-2.jpg"
                           alt="Blog Image"
-                      /></a>
+                      /></a></Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                        <a className="text-inherit" href="/blog-details"
-                          >Harmony With Nature Of Belgium Tour and travle</a>
+                       <Link to="/blog-details"> <a className="text-inherit"
+                          >Harmony With Nature Of Belgium Tour and travle</a></Link>
                       </h4>
                       <div className="recent-post-meta">
-                        <a href="/blog"
-                          ><i className="fa-regular fa-calendar"></i>25/6/ 2025</a>
+                       <Link to="/blog"> <a
+                          ><i className="fa-regular fa-calendar"></i>25/6/ 2025</a></Link>
                       </div>
                     </div>
                   </div>
                   <div className="recent-post">
                     <div className="media-img">
-                      <a href="/blog-details"
+                     <Link to="/blog-details"> <a 
                         ><img
                           src="assets/img/blog/recent-post-1-3.jpg"
                           alt="Blog Image"
-                      /></a>
+                      /></a></Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                        <a className="text-inherit" href="/blog-details"
-                          >Exploring The Green Spaces Of Realar Residence</a>
+                     <Link to="/blog-details">   <a className="text-inherit"
+                          >Exploring The Green Spaces Of Realar Residence</a></Link>
                       </h4>
                       <div className="recent-post-meta">
-                        <a href="/blog"
-                          ><i className="fa-regular fa-calendar"></i>27/6/ 2025</a>
+                        <Link to="/blog"><a 
+                          ><i className="fa-regular fa-calendar"></i>27/6/ 2025</a></Link>
                       </div>
                     </div>
                   </div>
@@ -868,11 +899,11 @@ Rating)</span>
               <div className="widget widget_tag_cloud">
                 <h3 className="widget_title">Popular Tags</h3>
                 <div className="tagcloud">
-                  <a href="/blog">Tour</a>
-                  <a href="/blog">Adventure</a>
-                  <a href="/blog">Rent</a> <a href="/blog">Innovate</a>
-                  <a href="/blog">Hotel</a> <a href="/blog">Modern</a>
-                  <a href="/blog">Luxury</a> <a href="/blog">Travel</a>
+                  <Link to="/blog"><a>Tour</a></Link>
+                  <Link to="/blog"><a>Adventure</a></Link>
+                 <Link to="/blog"> <a>Rent</a></Link> <Link to="/blog-details"><a>Innovate</a></Link>
+                 <Link to="/blog"> <a >Hotel</a></Link> <Link to="/blog-details"><a >Modern</a></Link>
+                 <Link to="/blog"> <a>Luxury</a></Link> <Link to="/blog-details"><a >Travel</a></Link>
                 </div>
               </div>
               <div
@@ -892,8 +923,8 @@ Rating)</span>
                       <a className="offter-num" href="%2b256214203215.html"
                         >+256 214 203 215</a>
                     </div>
-                    <a href="/contact" className="th-btn style2 th-icon"
-                      >Read More</a>
+                    <Link to="/contact"><a className="th-btn style2 th-icon"
+                      >Read More</a></Link>
                   </div>
                 </div>
               </div>

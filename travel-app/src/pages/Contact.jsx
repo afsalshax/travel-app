@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 
 function Contact() {
   return (
@@ -8,7 +10,7 @@ function Contact() {
         <div className="breadcumb-content">
           <h1 className="breadcumb-title">Contact Us</h1>
           <ul className="breadcumb-menu">
-            <li><a href="home-travel.html">Home</a></li>
+            <li><Link to="/"><a>Home</a></Link></li>
             <li>Contact Us</li>
           </ul>
         </div>
