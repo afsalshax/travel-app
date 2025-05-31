@@ -17,12 +17,14 @@ import Destinationdetails from './pages/Destination-details'
 import Tourdetails from './pages/tour-details'
 import Tour from './pages/Tour'
 import Tourguiderdetails from './pages/Tour-guider-details'
+import Cursorfollower from './components/Cursor-follower'
 
 function App() {
   return (
     <div>
       <Header />
       <BrowserRouter>
+            <Cursorfollower/>
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/about' element={<About />}></Route>

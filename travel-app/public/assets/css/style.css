@@ -3605,28 +3605,27 @@ hr.title-line {
 }
 
 .cursor-follower {
-    position: fixed;
-    background: var(--theme-color);
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
-    border: 1px solid var(--theme-color);
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    z-index: 999999;
-    -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-    transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
-    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: none;
-    -webkit-transform: translate(2px, 2px);
-    -ms-transform: translate(2px, 2px);
-    transform: translate(2px, 2px)
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background: var(--theme-color, #ff6600);
+  border: 1px solid var(--theme-color, #ff6600);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999999;
+  user-select: none;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition:
+    top 0.1s ease,
+    left 0.1s ease,
+    opacity 0.2s ease,
+    background 0.2s ease;
 }
+
 
 .slider-drag-cursor {
     pointer-events: none;
@@ -8297,14 +8296,16 @@ ol.wp-block-rss {
 }
 
 .header-layout1 .logo-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 19%;
-    height: 92px;
-    z-index: -1;
-    background-color: var(--theme-color)
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 92px;
+  z-index: -1;
+  background-color: var(--theme-color);
+  border-top-right-radius: 80px 100px;
 }
+
 
 @media (min-width: 1930px) {
     .header-layout1 .logo-bg {

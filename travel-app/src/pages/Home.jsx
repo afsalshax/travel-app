@@ -133,7 +133,10 @@ function Home() {
           modules={[Navigation, Pagination, EffectFade, Autoplay]}
           effect="fade"
           loop={true}
-          pagination={{ clickable: true }}
+          pagination={{
+            el: '.slider-pagination',
+            clickable: true,
+          }}
           navigation={{
             nextEl: '.slider-next',
             prevEl: '.slider-prev',
@@ -679,7 +682,7 @@ function Home() {
       <section
         className="tour-area position-relative bg-top-center overflow-hidden space"
         id="service-sec"
-         style={{ backgroundImage: "url('/assets/img/bg/tour_bg_1.jpg')" }}
+        style={{ backgroundImage: "url('/assets/img/bg/tour_bg_1.jpg')" }}
       >
         <div className="container">
           <div className="row">
@@ -1244,8 +1247,8 @@ function Home() {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>       
-           </div>
+          </div>
+        </div>
       </div>
       <section
         className="bg-smoke overflow-hidden space overflow-hidden"
