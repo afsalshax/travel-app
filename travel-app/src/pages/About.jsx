@@ -123,7 +123,7 @@ function About() {
                 <div className="about-item-wrap">
                   <div className="about-item style2">
                     <div className="about-item_img">
-                      <img src="assets/img/icon/about_1_1.svg" alt="" />
+                      <img src="assets/img/icon/map3.svg" alt="" />
                     </div>
                     <div className="about-item_centent">
                       <h5 className="box-title">Exclusive Trip</h5>
@@ -147,7 +147,7 @@ function About() {
                   </div>
                   <div className="about-item style2">
                     <div className="about-item_img">
-                      <img src="assets/img/icon/about_1_3.svg" alt="" />
+                      <img src="assets/img/icon/guide.svg" alt="" />
                     </div>
                     <div className="about-item_centent">
                       <h5 className="box-title">Professional Guide</h5>
@@ -378,11 +378,12 @@ function About() {
           </div>
           <div className="slider-area">
             <Swiper
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Pagination,Autoplay]}
               className="swiper th-slider teamSlider1 has-shadow"
               id="teamSlider1"
               spaceBetween={30}
               slidesPerView={4}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               pagination={{ clickable: true, el: ".slider-pagination" }}
               breakpoints={{
                 0: { slidesPerView: 1 },
@@ -431,14 +432,17 @@ function About() {
       <section className="testi-area overflow-hidden space-bottom" id="testi-sec">
         <div className="container-fluid p-0">
           <div className="title-area mb-20 text-center">
-            <span className="sub-title">Testimonial</span>
+            <span className="sub-title pt-5">Testimonial</span>
             <h2 className="sec-title">What Client Say About us</h2>
           </div>
           <div className="slider-area">
             <div className="swiper th-slider testiSlider1 has-shadow" id="testiSlider1">
               <Swiper
-                modules={[Pagination]}
+                modules={[Pagination,Autoplay]}
                 pagination={{ el: ".slider-pagination", clickable: true }}
+                initialSlide={2}
+                loop={true}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
                 breakpoints={{
                   0: { slidesPerView: 1 },
                   767: { slidesPerView: 2, centeredSlides: true },
@@ -585,7 +589,11 @@ function About() {
         <div className="container-fluid">
           <div className="slider-area">
             <Swiper
+            modules={[Autoplay]}
               centeredSlides={true}
+              initialSlide={2}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop={true}
               breakpoints={{
                 0: { slidesPerView: 1 },
                 576: { slidesPerView: 2 },

@@ -261,9 +261,11 @@ function Home() {
                     </div>
 
                     <Swiper
-                      modules={[Pagination]}
+                      modules={[Pagination,Autoplay]}
                       spaceBetween={50}
                       pagination={{ clickable: true }}
+                       autoplay={{ delay: 3000 }}
+                      loop={true}
                       breakpoints={{
                         0: { slidesPerView: 1 },
                         576: { slidesPerView: 1 },
@@ -344,9 +346,11 @@ function Home() {
           </div>
 
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination,Autoplay]}
             spaceBetween={50}
             pagination={{ clickable: true }}
+            loop={true}
+             autoplay={{ delay: 3000, disableOnInteraction: false }}
             breakpoints={{
               0: { slidesPerView: 1 },
               576: { slidesPerView: 1 },
@@ -393,11 +397,13 @@ function Home() {
           <div className="slider-area">
             <Swiper
               className="swiper th-slider destination-slider slider-drag-wrap"
-              modules={[EffectCoverflow]}
+              modules={[EffectCoverflow,Autoplay]}
               effect="coverflow"
               centeredSlides={true}
+              loop={true}
               grabCursor={true}
               slidesPerView={4}
+               autoplay={{ delay: 3000, disableOnInteraction: false }}
               initialSlide={2}
               coverflowEffect={{
                 rotate: 0,
@@ -672,10 +678,12 @@ function Home() {
           </div>
           <div className="slider-area tour-slider">
             <Swiper
-              modules={[Navigation]}
+              modules={[Navigation,Autoplay]}
               navigation
               // pagination={{ clickable: true }}
               spaceBetween={20}
+               autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop={true}
               breakpoints={{
                 0: { slidesPerView: 1 },
                 576: { slidesPerView: 1 },
@@ -804,7 +812,7 @@ function Home() {
       <div className="gallery-area">
         <div className="container th-container">
           <div className="title-area text-center">
-            <span className="sub-title">Make Your Tour More Pleasure</span>
+            <span className="sub-title pt-5">Make Your Tour More Pleasure</span>
             <h2 className="sec-title">Recent Gallery</h2>
           </div>
           <div className="row gy-10 gx-10 justify-content-center align-items-center">
@@ -1019,11 +1027,12 @@ function Home() {
           </div>
           <div className="slider-area">
             <Swiper
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Pagination,Autoplay]}
               className="swiper th-slider teamSlider1 has-shadow"
               id="teamSlider1"
               spaceBetween={30}
               slidesPerView={4}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               pagination={{ clickable: true, el: ".slider-pagination" }}
               breakpoints={{
                 0: { slidesPerView: 1 },
@@ -1078,9 +1087,11 @@ function Home() {
           <div className="slider-area">
             <div className="swiper th-slider testiSlider1 has-shadow" id="testiSlider1">
               <Swiper
-                modules={[Pagination]}
+                modules={[Pagination,Autoplay]}
                 pagination={{ el: ".slider-pagination", clickable: true }}
                 initialSlide={2}
+                loop={true}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
                 breakpoints={{
                   0: { slidesPerView: 1 },
                   767: { slidesPerView: 2, centeredSlides: true },
@@ -1245,10 +1256,12 @@ function Home() {
           <div className="slider-area">
             <div className="swiper th-slider has-shadow" id="blogSlider1">
               <Swiper
-                modules={[Navigation]}
+                modules={[Navigation,Autoplay]}
                 navigation
                 // pagination={{ clickable: true }}
+                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 spaceBetween={30}
+                loop={true}
                 breakpoints={{
                   0: { slidesPerView: 1 },
                   576: { slidesPerView: 1 },

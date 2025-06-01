@@ -12,7 +12,7 @@ function Blog() {
       <div className="breadcumb-wrapper" style={{ backgroundImage: "url('/assets/img/bg/breadcumb-bg.jpg')" }}>
         <div className="container">
           <div className="breadcumb-content">
-            <h1 className="breadcumb-title">Blog Lists View</h1>
+            <h1 className="breadcumb-title">Blog Lists</h1>
             <ul className="breadcumb-menu">
               <li><Link to="/">Home</Link></li>
               <li>Blog Lists View</li>

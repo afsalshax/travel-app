@@ -378,9 +378,10 @@ const tours = [
           <div className="tab-pane fade active show" id="nav-step1" role="tabpanel">
               <div className="slider-area tour-slider">
             <Swiper
-              modules={[Navigation]}
+              modules={[Navigation,Autoplay]}
               navigation
               // pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               spaceBetween={20}
               breakpoints={{
                 0: { slidesPerView: 1 },
@@ -509,8 +510,9 @@ const tours = [
           <div className="tab-pane fade" id="nav-step2" role="tabpanel">
               <div className="slider-area tour-slider">
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation,Autoplay]}
           navigation
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           spaceBetween={20}
           breakpoints={{
             0: { slidesPerView: 1 },
@@ -569,10 +571,11 @@ const tours = [
           <div className="tab-pane fade" id="nav-step3" role="tabpanel">
              <div className="slider-area tour-slider slider-drag-wrap">
       <Swiper
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation,Autoplay]}
         spaceBetween={30}
         pagination={{ el: ".slider-pagination", clickable: true }}
         navigation={true}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         breakpoints={{
           0: { slidesPerView: 1 },
           576: { slidesPerView: 1 },

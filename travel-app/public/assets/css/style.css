@@ -3085,7 +3085,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     font-weight: 400;
     font-family: var(--style-font);
     position: relative;
-    margin-bottom: -4px
+    margin-bottom: -4px;
 }
 
 @media (max-width: 480px) {
@@ -19152,7 +19152,10 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .about-item.style2 .about-item_img {
-    background-color: var(--smoke-color)
+    background-color: var(--title-color)
+}
+.about-item.style2 .about-item_img:hover {
+    background-color: #ff6600
 }
 
 .about-item.style4 .about-item_img {
@@ -19172,7 +19175,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .about-item_img img {
     -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out
+    transition: all 0.4s ease-in-out;
 }
 
 .about-item_img:hover {
@@ -19182,6 +19185,7 @@ span.select2-selection.select2-selection--single:focus {
 .about-item_img:hover img {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg)
+    
 }
 
 .about-item .box-title {

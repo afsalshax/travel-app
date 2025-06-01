@@ -18,6 +18,7 @@ import Tourdetails from './pages/tour-details'
 import Tour from './pages/Tour'
 import Tourguiderdetails from './pages/Tour-guider-details'
 import Cursorfollower from './components/Cursor-follower'
+import Scroltop from './components/Scroltop'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <BrowserRouter>
             <Header />
             <Cursorfollower/>
+            <Scroltop/>
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/about' element={<About />}></Route>
@@ -42,7 +44,6 @@ function App() {
           <Route path='/tour-details' element={<Tourdetails />}></Route>
           <Route path='/tour' element={<Tour />}></Route>
           <Route path='/tour-guider-details' element={<Tourguiderdetails />}></Route>
-
         </Routes>
               <Footer />
       </BrowserRouter>

@@ -387,7 +387,7 @@ function Header() {
                       </li>
                       <li><Link to="/about">About Us</Link></li>
                       <li className="menu-item-has-children">
-                        Destination
+                       <a>Destination</a>
                         <ul className="sub-menu">
                           <li><Link to="/destination">Destination</Link></li>
                           <li>
@@ -451,14 +451,8 @@ function Header() {
                           <li><Link to="/price">Price Package</Link></li>
                           <li><Link to="/error">Error Page</Link></li>
                         </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a>Blog</a>
-                        <ul className="sub-menu">
+                      </li>         
                           <li><Link to="/blog">Blog</Link></li>
-                          <li><Link to="/blog-details">Blog Details</Link></li>
-                        </ul>
-                      </li>
                       <li><Link to="/contact">Contact us</Link></li>
                     </ul>
                   </nav>
@@ -475,10 +469,10 @@ function Header() {
                 </div>
               </div>
             </div>
-            <div
+            {/* <div
               className="logo-bg"
               data-mask-src="assets/img/logo_bg_mask.png"
-            ></div>
+            ></div> */}
           </div>
         </div>
       </header>
