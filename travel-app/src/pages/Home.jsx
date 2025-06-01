@@ -166,8 +166,8 @@ function Home() {
                     Natural Wonder of the world
                   </h1>
                   <div className="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
-                  <Link to="/tour">  <a className="th-btn th-icon">Explore Tours</a></Link>
-                   <Link to="/service"> <a className="th-btn style2 th-icon">Our Services</a></Link>
+                    <Link to="/tour">  <a className="th-btn th-icon">Explore Tours</a></Link>
+                    <Link to="/service"> <a className="th-btn style2 th-icon">Our Services</a></Link>
                   </div>
                 </div>
               </div>
@@ -194,8 +194,8 @@ function Home() {
                     Let’s make your best trip with us
                   </h1>
                   <div className="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
-                    <Link to="/tour"><a  className="th-btn th-icon">Explore Tours</a></Link>
-                   <Link to="/service"> <a className="th-btn style2 th-icon">Our Services</a></Link>
+                    <Link to="/tour"><a className="th-btn th-icon">Explore Tours</a></Link>
+                    <Link to="/service"> <a className="th-btn style2 th-icon">Our Services</a></Link>
                   </div>
                 </div>
               </div>
@@ -222,8 +222,8 @@ function Home() {
                     Explore beauty of the whole world
                   </h1>
                   <div className="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
-                   <Link to="/tour"> <a  className="th-btn th-icon">Explore Tours</a></Link>
-                  <Link to="/service">  <a className="th-btn style2 th-icon">Our Services</a></Link>
+                    <Link to="/tour"> <a className="th-btn th-icon">Explore Tours</a></Link>
+                    <Link to="/service">  <a className="th-btn style2 th-icon">Our Services</a></Link>
                   </div>
                 </div>
               </div>
@@ -253,112 +253,83 @@ function Home() {
           >
             <div className="input-wrap">
               <div className="row align-items-center justify-content-between">
-                <div className="form-group col-md-6 col-lg-auto">
-                  <div className="icon"><i className="fa-light fa-route"></i></div>
-                  <div className="search-input">
-                    <label>Destination</label>
-                    <select
-                      name="subject"
-                      id="subject"
-                      className="form-select nice-select"
+
+                  <div className="container th-container">
+                    <div className="title-area text-center">
+                      <span className="sub-title">Package Top Deals</span>
+                      {/* <h2 className="sec-title">Package Top Deals</h2> */}
+                    </div>
+
+                    <Swiper
+                      modules={[Pagination]}
+                      spaceBetween={50}
+                      pagination={{ clickable: true }}
+                      breakpoints={{
+                        0: { slidesPerView: 1 },
+                        576: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        992: { slidesPerView: 3 },
+                        1200: { slidesPerView: 3 },
+                        1400: { slidesPerView: 4 },
+                      }}
+                      className="th-slider has-shadow packageSlider"
                     >
-                      <option
-                        value="Select Destination"
-                        selected="selected"
-                        disabled="disabled"
-                      >
-                        Select Destination
-                      </option>
-                      <option value="Australia">Australia</option>
-                      <option value="Dubai">Dubai</option>
-                      <option value="England">England</option>
-                      <option value="Sweden">Sweden</option>
-                      <option value="Thailand">Thailand</option>
-                      <option value="Egypt">Egypt</option>
-                      <option value="Saudi Arab">Saudi Arab</option>
-                      <option value="Switzerland">Switzerland</option>
-                      <option value="Scandinavia">Scandinavia</option>
-                      <option value="Western Europe">Western Europe</option>
-                      <option value="Indonesia">Indonesia</option>
-                      <option className="Italy">Italy</option>
-                    </select>
+                      {[
+                        { img: "category_1_1.jpg", title: "Cruises" },
+                        { img: "category_1_2.jpg", title: "Hiking" },
+                        { img: "category_1_3.jpg", title: "Airbirds" },
+                        { img: "category_1_4.jpg", title: "Wildlife" },
+                        { img: "category_1_5.jpg", title: "Walking" },
+                      ].map((item, index) => (
+                        <SwiperSlide key={index}>
+                          <div
+                            className="deal-slide"
+                            style={{
+                              backgroundImage: `url(assets/img/category/${item.img})`,
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                              height: "100px", // adjust height as needed
+                              position: "relative",
+                              borderRadius: "12px",
+                              overflow: "hidden",
+                            }}
+                          >
+                            <div
+                              className="overlay"
+                              style={{
+                                backgroundColor: "rgba(0, 0, 0, 0.4)",
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                              }}
+                            ></div>
+                            <div
+                              className="slide-content"
+                              style={{
+                                position: "relative",
+                                zIndex: 2,
+                                color: "#fff",
+                                padding: "20px",
+                                height: "100%",
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "flex-end",
+                              }}
+                            >
+                              {/* <h3 className="slide-title" style={{ color: "#fff", marginTop: "5px" }}>{item.title}</h3> */}
+                              <Link to="/destination" className="line-btn" style={{ color: "#fff", marginTop: "10px" }}>
+                               {item.title}
+                              </Link>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+
+                    <div className="slider-pagination" />
                   </div>
-                </div>
-                <div className="form-group col-md-6 col-lg-auto">
-                  <div className="icon">
-                    <i className="fa-regular fa-person-hiking"></i>
-                  </div>
-                  <div className="search-input">
-                    <label>Type</label>
-                    <select className="nice-select" name="Adventure" id="Adventure">
-                      <option
-                        value="Adventure"
-                        selected="selected"
-                        disabled="disabled"
-                      >
-                        Adventure
-                      </option>
-                      <option value="Beach">Beach</option>
-                      <option value="Group Tour">Group Tour</option>
-                      <option value="Couple Tour">Couple Tour</option>
-                      <option value="Family Tour">Family Tour</option>
-                    </select>
-                  </div>
-                </div>
-                <div className="form-group col-md-6 col-lg-auto">
-                  <div className="icon"><i className="fa-light fa-clock"></i></div>
-                  <div className="search-input">
-                    <label>Duration</label>
-                    <select
-                      className="form-select nice-select"
-                      name="Duration"
-                      id="Duration"
-                    >
-                      <option
-                        value="Normal"
-                        selected="selected"
-                        disabled="disabled"
-                      >
-                        Duration
-                      </option>
-                      <option value="1">1 days</option>
-                      <option value="2">2 days</option>
-                      <option value="3">3 days</option>
-                      <option value="4">4 days</option>
-                      <option value="5">5 days</option>
-                      <option value="6">6 days</option>
-                      <option value="7">7 days</option>
-                    </select>
-                  </div>
-                </div>
-                <div className="form-group col-md-6 col-lg-auto">
-                  <div className="icon">
-                    <i className="fa-light fa-map-location-dot"></i>
-                  </div>
-                  <div className="search-input">
-                    <label>Tour Category</label>
-                    <select
-                      name="subject"
-                      id="category"
-                      className="form-select nice-select"
-                    >
-                      <option
-                        value="Normal"
-                        selected="selected"
-                        disabled="disabled"
-                      >
-                        Luxury
-                      </option>
-                      <option value="1">Delux</option>
-                      <option value="2">Economy</option>
-                    </select>
-                  </div>
-                </div>
-                <div className="form-btn col-md-12 col-lg-auto">
-                  <button className="th-btn">
-                    <img src="assets/img/icon/search.svg" alt="" />Search
-                  </button>
-                </div>
               </div>
               <p className="form-messages mb-0 mt-3"></p>
             </div>
@@ -400,9 +371,9 @@ function Home() {
                       <img src={`assets/img/category/${item.img}`} alt="Image" />
                     </div>
                     <h3 className="box-title">
-                     <Link to="/destination"> <a>{item.title}</a></Link>
+                      <Link to="/destination"> <a>{item.title}</a></Link>
                     </h3>
-                   <Link to="/destination"> <a className="line-btn">See more</a></Link>
+                    <Link to="/destination"> <a className="line-btn">See more</a></Link>
                   </div>
                 </SwiperSlide>
               ))
@@ -449,7 +420,7 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                         <Link to="/destination-details"> <a>Maldives</a></Link>
+                          <Link to="/destination-details"> <a>Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
@@ -469,12 +440,12 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                         <Link to="/destinaton-details"> <a>Maldives</a></Link>
+                          <Link to="/destinaton-details"> <a>Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                       <Link to="/destinaton-details"> <a className="th-btn style2 th-icon">
+                        <Link to="/destinaton-details"> <a className="th-btn style2 th-icon">
                           View All
                         </a></Link>
                       </div>
@@ -509,7 +480,7 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                         <Link to="/destinaton-details"> <a>Maldives</a></Link>
+                          <Link to="/destinaton-details"> <a>Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
@@ -534,7 +505,7 @@ function Home() {
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                       <Link to="/destinaton-details"> <a className="th-btn style2 th-icon">
+                        <Link to="/destinaton-details"> <a className="th-btn style2 th-icon">
                           View All
                         </a></Link>
                       </div>
@@ -549,12 +520,12 @@ function Home() {
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">
-                         <Link to="/destinaton-details"> <a >Maldives</a></Link>
+                          <Link to="/destinaton-details"> <a >Maldives</a></Link>
                         </h4>
                         <span className="destination-subtitle">15 Listing</span>
                       </div>
                       <div>
-                       <Link to="/destinaton-details">  <a className="th-btn style2 th-icon">
+                        <Link to="/destinaton-details">  <a className="th-btn style2 th-icon">
                           View All
                         </a></Link>
                       </div>
@@ -631,7 +602,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="mt-35">
-                  <Link to="/about"> <a  className="th-btn style3 th-icon"
+                  <Link to="/about"> <a className="th-btn style3 th-icon"
                   >Learn More</a></Link>
                 </div>
               </div>
@@ -806,7 +777,7 @@ function Home() {
                             <span className="rating">{ratingCount}</span>(4.8 Rating)
                           </span>
                         </div>
-                       <Link to="/tour-details"> <a  className="woocommerce-review-link">
+                        <Link to="/tour-details"> <a className="woocommerce-review-link">
                           (<span className="count">{ratingCount}</span> Rating)
                         </a></Link>
                       </div>
@@ -818,7 +789,7 @@ function Home() {
                           <i className="fa-light fa-clock"></i>
                           {days} Days
                         </span>
-                       <Link to="/contact"> <a className="th-btn style4 th-icon">
+                        <Link to="/contact"> <a className="th-btn style4 th-icon">
                           Book Now
                         </a></Link>
                       </div>
@@ -1266,7 +1237,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-md-auto">
-              <Link to="/blog">  <a className="th-btn style4 th-icon"
+                <Link to="/blog">  <a className="th-btn style4 th-icon"
                 >See More Articles</a></Link>
               </div>
             </div>
@@ -1294,8 +1265,8 @@ function Home() {
                       </div>
                       <div className="blog-box_content">
                         <div className="blog-meta">
-                         <Link to="/blog"> <a className="author" >{post.date}</a></Link>
-                         <Link to="/blog"> <a>{post.readTime}</a></Link>
+                          <Link to="/blog"> <a className="author" >{post.date}</a></Link>
+                          <Link to="/blog"> <a>{post.readTime}</a></Link>
                         </div>
                         <h3 className="box-title">
                           <a href={post.link}>{post.title}</a>

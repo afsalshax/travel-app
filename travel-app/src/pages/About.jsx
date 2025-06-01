@@ -74,7 +74,7 @@ function About() {
           <div className="breadcumb-content">
             <h1 className="breadcumb-title">About Tourm</h1>
             <ul className="breadcumb-menu">
-              <li><Link to="/"><a>Home</a></Link></li>
+              <li><Link to="/">Home</Link></li>
               <li>About Tourm</li>
             </ul>
           </div>
@@ -159,9 +159,8 @@ function About() {
                   </div>
                 </div>
                 <div className="mt-35">
-                  <Link to="/contact">
-                    <a className="th-btn style3 th-icon"
-                    >Contact With Us</a>
+                  <Link className="th-btn style3 th-icon" to="/contact">
+                  Contact With Us
                   </Link>
                 </div>
               </div>
@@ -217,12 +216,11 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <Link to="/service-details"><a>Photo Shoot</a></Link>
+                    <Link to="/service-details">Photo Shoot</Link>
                   </h3>
                   <p className="destination-text">20 Listing</p>
-                 <Link to="/contact">
-                    <a className="th-btn style4 th-icon"
-                    >Book Now</a>
+                 <Link to="/contact" className="th-btn style4 th-icon">
+                    Book Now
                  </Link>
                 </div>
               </div>
@@ -237,12 +235,11 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <Link to="/service-details"><a>Tour Guide</a></Link>
+                    <Link to="/service-details">Tour Guide</Link>
                   </h3>
                   <p className="destination-text">22 Listing</p>
-                 <Link to="/contact">
-                    <a className="th-btn style4 th-icon"
-                    >Book Now</a>
+                 <Link to="/contact" className="th-btn style4 th-icon">
+                    Book Now
                  </Link>
                 </div>
               </div>
@@ -257,12 +254,11 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                   <Link to="/service-details"> <a>Cozy Event</a></Link>
+                   <Link to="/service-details">Cozy Event</Link>
                   </h3>
                   <p className="destination-text">23 Listing</p>
-                 <Link to="/contact">
-                    <a className="th-btn style4 th-icon"
-                    >Book Now</a>
+                 <Link to="/contact" className="th-btn style4 th-icon">
+                  Book Now
                  </Link>
                 </div>
               </div>
@@ -277,12 +273,11 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <Link to="/service-details"><a>Interesting Rest</a></Link>
+                    <Link to="/service-details">Interesting Rest</Link>
                   </h3>
                   <p className="destination-text">24 Listing</p>
-                  <Link to="/contact">
-                    <a className="th-btn style4 th-icon"
-                    >Book Now</a>
+                  <Link to="/contact" className="th-btn style4 th-icon">
+                    Book Now
                   </Link>
                 </div>
               </div>
@@ -297,12 +292,11 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <Link to="/service-details"><a>Kayaking</a></Link>
+                    <Link to="/service-details">Kayaking</Link>
                   </h3>
                   <p className="destination-text">25 Listing</p>
-                  <Link to="/contact">
-                    <a className="th-btn style4 th-icon"
-                    >Book Now</a>
+                  <Link to="/contact" className="th-btn style4 th-icon">
+                    Book Now
                   </Link>
                 </div>
               </div>
@@ -317,12 +311,11 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <Link to="/service-details"><a>Safe Flight</a></Link>
+                    <Link to="/service-details">Safe Flight</Link>
                   </h3>
                   <p className="destination-text">26 Listing</p>
-                  <Link to="/contact">
-                    <a className="th-btn style4 th-icon"
-                    >Book Now</a>
+                  <Link to="/contact" className="th-btn style4 th-icon">
+                  Book Now
                   </Link>
                 </div>
               </div>
@@ -337,12 +330,12 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <Link to="//service-details"><a>Entertainment</a></Link>
+                    <Link to="/service-details">Entertainment</Link>
                   </h3>
                   <p className="destination-text">27 Listing</p>
-                 <Link to="/contact">
-                    <a className="th-btn style4 th-icon"
-                    >Book Now</a>
+                 <Link to="/contact" className="th-btn style4 th-icon">
+                     
+                    Book Now
                  </Link>
                 </div>
               </div>
@@ -357,12 +350,11 @@ function About() {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <Link to="/service-details"><a>Delicisious Food</a></Link>
+                    <Link to="/service-details">Delicisious Food</Link>
                   </h3>
                   <p className="destination-text">28 Listing</p>
-                 <Link to="/contact">
-                    <a  className="th-btn style4 th-icon"
-                    >Book Now</a>
+                 <Link to="/contact" className="th-btn style4 th-icon">
+                    Book Now
                  </Link>
                 </div>
               </div>

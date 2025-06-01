@@ -26,17 +26,16 @@ function Blogdetails() {
               </div>
               <div className="blog-content">
                 <div className="blog-meta">
-                 <Link to="/blog">
-                    <a className="author"
-                      ><i className="fa-light fa-user"></i>by David Smith</a>
+                 <Link to="/blog" className="author">
+                      <i className="fa-light fa-user"></i>by David Smith
                  </Link>
                 <Link to="/blog">
-                    <a
-                      ><i className="fa-regular fa-calendar"></i>05 May, 2025</a>
+                    
+                    <i className="fa-regular fa-calendar"></i>05 May, 2025
                 </Link>
                  <Link to="/blog-details">
-                    <a
-                      ><img src="assets/img/icon/map.svg" alt="" />Sea Beach</a>
+                    
+                      <img src="assets/img/icon/map.svg" alt="" />Sea Beach
                  </Link>
                 </div>
                 <h2 className="blog-title">
@@ -130,10 +129,10 @@ function Blogdetails() {
                     <div className="col-md-auto">
                       <span className="share-links-title">Tags:</span>
                       <div className="tagcloud">
-                        <Link to="/blog"><a>Apartment</a></Link>
-                        <Link to="/blog"><a>Buyer</a></Link>
-                       <Link to="/blog"> <a>Modern</a></Link>
-                        <Link to="/blog"> <a >Luxury</a></Link>
+                        <Link to="/blog">Apartment</Link>
+                        <Link to="/blog">Buyer</Link>
+                       <Link to="/blog">Modern</Link>
+                        <Link to="/blog">Luxury</Link>
                       </div>
                     </div>
                     <div className="col-md-auto text-xl-end">
@@ -175,9 +174,8 @@ function Blogdetails() {
                         strategic theme areas after user.
                       </p>
                       <div className="reply_and_edit">
-                        <Link to="/blog-details">
-                          <a className="reply-btn"
-                            ><i className="fas fa-reply"></i>Reply</a>
+                        <Link to="/blog-details"  className="reply-btn">
+                          <i className="fas fa-reply"></i>Reply
                         </Link>
                       </div>
                     </div>
@@ -202,9 +200,8 @@ function Blogdetails() {
                             transfer, which are services that pick you up
                           </p>
                           <div className="reply_and_edit">
-                            <Link to="/blog-details">
-                              <a className="reply-btn"
-                                ><i className="fas fa-reply"></i>Reply</a>
+                            <Link to="/blog-details" className="reply-btn">
+                              <i className="fas fa-reply"></i>Reply
                             </Link>
                           </div>
                         </div>
@@ -231,9 +228,8 @@ function Blogdetails() {
                         strategic theme areas after user.
                       </p>
                       <div className="reply_and_edit">
-                        <Link to="/blog-details">
-                          <a className="reply-btn"
-                            ><i className="fas fa-reply"></i>Reply</a>
+                        <Link to="/blog-details" className="reply-btn">
+                         <i className="fas fa-reply"></i>Reply
                         </Link>
                       </div>
                     </div>
@@ -309,42 +305,39 @@ function Blogdetails() {
                 <ul>
                   <li>
                    <Link to="/blog">
-                      <a
-                        ><img src="assets/img/theme-img/map.svg" alt="" />City
-                        Tour</a>
+                     <img src="assets/img/theme-img/map.svg" alt="" />City
+                        Tour
                    </Link>
                     <span>(8)</span>
                   </li>
                   <li>
-                    <Link to="/blog"><a 
-                      ><img src="assets/img/theme-img/map.svg" alt="" />Beach
-                      Tours</a></Link>
+                    <Link to="/blog">
+                      <img src="assets/img/theme-img/map.svg" alt="" />Beach
+                      Tours</Link>
                     <span>(6)</span>
                   </li>
                   <li>
-                  <Link to="/blog">  <a
-                      ><img src="assets/img/theme-img/map.svg" alt="" />Wildlife
-                      Tours</a></Link>
+                  <Link to="/blog">  
+                      <img src="assets/img/theme-img/map.svg" alt="" />Wildlife
+                      Tours</Link>
                     <span>(2)</span>
                   </li>
                   <li>
-                    <Link to="/blog"><a
-                      ><img src="assets/img/theme-img/map.svg" alt="" />News &
-                      Tips</a></Link>
+                    <Link to="/blog">
+                      <img src="assets/img/theme-img/map.svg" alt="" />News &
+                      Tips</Link>
                     <span>(7)</span>
                   </li>
                   <li>
-                   <Link to="/blog"> <a
-                      ><img
+                   <Link to="/blog"> <img
                         src="assets/img/theme-img/map.svg"
                         alt=""
-                      />Adventure Tours</a></Link>
+                      />Adventure Tours</Link>
                     <span>(9)</span>
                   </li>
                   <li>
-                   <Link to="/blog"> <a
-                      ><img src="assets/img/theme-img/map.svg" alt="" />Mountain
-                      Tours</a></Link>
+                   <Link to="/blog"> <img src="assets/img/theme-img/map.svg" alt="" />Mountain
+                      Tours</Link>
                     <span>(10)</span>
                   </li>
                 </ul>
@@ -355,24 +348,21 @@ function Blogdetails() {
                   <div className="recent-post">
                     <div className="media-img">
                       <Link to="/blog-details">
-                        <a
-                          ><img
+                       <img
                             src="assets/img/blog/recent-post-1-1.jpg"
                             alt="Blog Image"
-                        /></a>
+                        />
                       </Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                       <Link to="/blog-details">
-                          <a className="text-inherit"
-                            >Exploring The Green Spaces Of the island maldives</a>
+                       <Link to="/blog-details" className="text-inherit">
+                        Exploring The Green Spaces Of the island maldives
                        </Link>
                       </h4>
                       <div className="recent-post-meta">
                        <Link to="/blog">
-                          <a
-                            ><i className="fa-regular fa-calendar"></i>22/6/ 2025</a>
+                          <i className="fa-regular fa-calendar"></i>22/6/ 2025
                        </Link>
                       </div>
                     </div>
@@ -380,24 +370,21 @@ function Blogdetails() {
                   <div className="recent-post">
                     <div className="media-img">
                       <Link to="/blog-details">
-                        <a
-                          ><img
+                       <img
                             src="assets/img/blog/recent-post-1-2.jpg"
                             alt="Blog Image"
-                        /></a>
+                        />
                       </Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                        <Link to="/blog-details">
-                          <a className="text-inherit"
-                            >Harmony With Nature Of Belgium Tour and travle</a>
+                        <Link to="/blog-details" className="text-inherit">
+                          Harmony With Nature Of Belgium Tour and travle
                         </Link>
                       </h4>
                       <div className="recent-post-meta">
                        <Link to="/blog">
-                          <a
-                            ><i className="fa-regular fa-calendar"></i>25/6/ 2025</a>
+                          <i className="fa-regular fa-calendar"></i>25/6/ 2025
                        </Link>
                       </div>
                     </div>
@@ -405,24 +392,21 @@ function Blogdetails() {
                   <div className="recent-post">
                     <div className="media-img">
                      <Link to="/blog-details">
-                        <a
-                          ><img
+                        <img
                             src="assets/img/blog/recent-post-1-3.jpg"
                             alt="Blog Image"
-                        /></a>
+                        />
                      </Link>
                     </div>
                     <div className="media-body">
                       <h4 className="post-title">
-                      <Link to="/blog-details">
-                          <a className="text-inherit"
-                            >Exploring The Green Spaces Of Realar Residence</a>
+                      <Link to="/blog-details" className="text-inherit">
+                         Exploring The Green Spaces Of Realar Residence
                       </Link>
                       </h4>
                       <div className="recent-post-meta">
                        <Link to="/blog">
-                          <a 
-                            ><i className="fa-regular fa-calendar"></i>27/6/ 2025</a>
+                         <i className="fa-regular fa-calendar"></i>27/6/ 2025
                        </Link>
                       </div>
                     </div>
@@ -432,11 +416,11 @@ function Blogdetails() {
               <div className="widget widget_tag_cloud">
                 <h3 className="widget_title">Popular Tags</h3>
                 <div className="tagcloud">
-                  <Link to="/blog"><a>Tour</a></Link>
-                  <Link to="/blog"><a>Adventure</a></Link>
-                 <Link to="/blog"> <a>Rent</a></Link> <Link to="/blog"><a>Innovate</a></Link>
-                  <Link to="/blog"><a>Hotel</a></Link> <Link to="/blog"><a>Modern</a></Link>
-                  <Link to="/blog"><a>Luxury</a></Link> <Link to="/blog"><a>Travel</a></Link>
+                  <Link to="/blog">Tour</Link>
+                  <Link to="/blog">Adventure</Link>
+                 <Link to="/blog"> Rent</Link> <Link to="/blog">Innovate</Link>
+                  <Link to="/blog">Hotel </Link> <Link to="/blog">Modern</Link>
+                  <Link to="/blog">Luxury</Link> <Link to="/blog">Travel</Link>
                 </div>
               </div>
               <div
@@ -456,9 +440,8 @@ function Blogdetails() {
                       <a className="offter-num" href="%2b256214203215.html"
                         >+256 214 203 215</a>
                     </div>
-                    <Link to="/contact">
-                      <a className="th-btn style2 th-icon"
-                        >Read More</a>
+                    <Link to="/contact" className="th-btn style2 th-icon">
+                        Read More
                     </Link>
                   </div>
                 </div>

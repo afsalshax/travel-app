@@ -11328,8 +11328,8 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
 
 .hero-1 .th-swiper-custom .swiper-pagination-bullets .swiper-pagination-bullet:hover,
 .hero-1 .th-swiper-custom .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: var(--theme-color);
-    border: 1px solid var(--theme-color)
+    background-color: #ff6600;
+    border: 1px solid  #ff6600
 }
 
 .hero-1 .th-swiper-custom .swiper-pagination-bullets .swiper-pagination-bullet:first-child {
@@ -11378,7 +11378,7 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
 }
 
 .hero-1 .slider-arrow:hover {
-    background-color: var(--theme-color);
+    background-color: #ff6600;
     color: var(--white-color)
 }
 
