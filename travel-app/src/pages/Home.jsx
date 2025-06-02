@@ -254,43 +254,45 @@ function Home() {
             <div className="input-wrap">
               <div className="row align-items-center justify-content-between">
 
-                  <div className="container th-container">
-                    <div className="title-area text-center">
-                      <span className="sub-title">Package Top Deals</span>
-                      {/* <h2 className="sec-title">Package Top Deals</h2> */}
-                    </div>
-
-                    <Swiper
-                      modules={[Pagination,Autoplay]}
-                      spaceBetween={50}
-                      pagination={{ clickable: true }}
-                       autoplay={{ delay: 3000 }}
-                      loop={true}
-                      breakpoints={{
-                        0: { slidesPerView: 1 },
-                        576: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        992: { slidesPerView: 3 },
-                        1200: { slidesPerView: 3 },
-                        1400: { slidesPerView: 4 },
-                      }}
-                      className="th-slider has-shadow packageSlider"
-                    >
-                      {[
-                        { img: "category_1_1.jpg", title: "Cruises" },
-                        { img: "category_1_2.jpg", title: "Hiking" },
-                        { img: "category_1_3.jpg", title: "Airbirds" },
-                        { img: "category_1_4.jpg", title: "Wildlife" },
-                        { img: "category_1_5.jpg", title: "Walking" },
-                      ].map((item, index) => (
-                        <SwiperSlide key={index}>
+                <div className="container th-container">
+                  <div className="title-area text-center mb-3">
+                    <span className="sub-title">Top Deals</span>
+                    {/* <h2 className="sec-title">Package Top Deals</h2> */}
+                  </div>
+                  <Swiper
+                    modules={[Pagination, Autoplay]}
+                    autoplay={{ delay: 3000 }}
+                    pagination={{ clickable: true }}
+                    loop={true}
+                    spaceBetween={20}
+                    breakpoints={{
+                      0: {
+                        slidesPerView: 1,
+                        centeredSlides: false,
+                      },
+                      768: {
+                        slidesPerView: 1.5,
+                        centeredSlides: true,
+                      },
+                    }}
+                    className="th-slider has-shadow packageSlider"
+                  >
+                    {[
+                      { img: "2122123.jpg", title: "Cruises" },
+                      { img: "3223232.jpg", title: "Hiking" },
+                      { img: "11025812.jpg", title: "Airbirds" },
+                      { img: "11684330.jpg", title: "Wildlife" },
+                      { img: "nov3.jpg", title: "Walking" },
+                    ].map((item, index) => (
+                      <SwiperSlide key={index}>
+                        <Link to="/destination">
                           <div
                             className="deal-slide"
                             style={{
-                              backgroundImage: `url(assets/img/category/${item.img})`,
+                              backgroundImage: `url(assets/img/offers/${item.img})`,
                               backgroundSize: "cover",
                               backgroundPosition: "center",
-                              height: "100px", // adjust height as needed
+                              height: "500px",
                               position: "relative",
                               borderRadius: "12px",
                               overflow: "hidden",
@@ -299,39 +301,49 @@ function Home() {
                             <div
                               className="overlay"
                               style={{
-                                backgroundColor: "rgba(0, 0, 0, 0.4)",
+                                backgroundColor: "rgba(0, 0, 0, 0)",
                                 position: "absolute",
                                 top: 0,
                                 left: 0,
                                 right: 0,
                                 bottom: 0,
                               }}
-                            ></div>
+                            />
+
                             <div
                               className="slide-content"
                               style={{
                                 position: "relative",
                                 zIndex: 2,
-                                color: "#fff",
                                 padding: "20px",
                                 height: "100%",
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: "flex-end",
                               }}
-                            >
-                              {/* <h3 className="slide-title" style={{ color: "#fff", marginTop: "5px" }}>{item.title}</h3> */}
-                              <Link to="/destination" className="line-btn" style={{ color: "#fff", marginTop: "10px" }}>
-                               {item.title}
-                              </Link>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      ))}
-                    </Swiper>
+                            />
 
-                    <div className="slider-pagination" />
-                  </div>
+                            {/* Pagination inside image */}
+                            <div
+                              className="swiper-pagination"
+                              style={{
+                                position: "absolute",
+                                bottom: "10px",
+                                left: "0",
+                                right: "0",
+                                zIndex: 2,
+                                textAlign: "center",
+                              }}
+                            />
+                          </div>
+                        </Link>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+
+
+                  <div className="slider-pagination" />
+                </div>
               </div>
               <p className="form-messages mb-0 mt-3"></p>
             </div>
@@ -344,13 +356,12 @@ function Home() {
             <span className="sub-title">Wornderful Place For You</span>
             <h2 className="sec-title">Tour Categories</h2>
           </div>
-
           <Swiper
-            modules={[Pagination,Autoplay]}
+            modules={[Pagination, Autoplay]}
             spaceBetween={50}
             pagination={{ clickable: true }}
             loop={true}
-             autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             breakpoints={{
               0: { slidesPerView: 1 },
               576: { slidesPerView: 1 },
@@ -397,13 +408,13 @@ function Home() {
           <div className="slider-area">
             <Swiper
               className="swiper th-slider destination-slider slider-drag-wrap"
-              modules={[EffectCoverflow,Autoplay]}
+              modules={[EffectCoverflow, Autoplay]}
               effect="coverflow"
               centeredSlides={true}
               loop={true}
               grabCursor={true}
-              slidesPerView={4}
-               autoplay={{ delay: 3000, disableOnInteraction: false }}
+              slidesPerView={3}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               initialSlide={2}
               coverflowEffect={{
                 rotate: 0,
@@ -419,134 +430,42 @@ function Home() {
                 1200: { slidesPerView: 3 },
               }}
             >
-              <SwiperSlide>
-                <div className="destination-box gsap-cursor">
-                  <div className="destination-img">
-                    <img src="assets/img/destination/destination_1_1.jpg" alt="destination image" />
-                    <div className="destination-content">
-                      <div className="media-left">
-                        <h4 className="box-title">
-                          <Link to="/destination-details"> <a>Maldives</a></Link>
-                        </h4>
-                        <span className="destination-subtitle">15 Listing</span>
-                      </div>
-                      <div>
-                        <Link to="/destination-details"><a className="th-btn style2 th-icon">
-                          View All
-                        </a></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="destination-box gsap-cursor">
-                  <div className="destination-img">
-                    <img src="assets/img/destination/destination_1_2.jpg" alt="destination image" />
-                    <div className="destination-content">
-                      <div className="media-left">
-                        <h4 className="box-title">
-                          <Link to="/destinaton-details"> <a>Maldives</a></Link>
-                        </h4>
-                        <span className="destination-subtitle">15 Listing</span>
-                      </div>
-                      <div>
-                        <Link to="/destinaton-details"> <a className="th-btn style2 th-icon">
-                          View All
-                        </a></Link>
+              {[
+                { img: "destination_1_1.jpg", title: "Maldives", listing: "14 Listing" },
+                { img: "destination_1_2.jpg", title: "Meghalaya", listing: "14 Listing" },
+                { img: "destination_1_3.jpg", title: "Dubai", listing: "15 Listing" },
+                { img: "destination_1_4.jpg", title: "Europe", listing: "10 Listing" },
+                { img: "destination_1_5.jpg", title: "Kerala", listing: "19 Listing" },
+                { img: "destination_1_1.jpg", title: "Maldives", listing: "14 Listing" },
+                { img: "destination_1_2.jpg", title: "Meghalaya", listing: "14 Listing" },
+              ].map((elem, index) => (
+                <SwiperSlide key={index}>
+                  <div className="destination-box gsap-cursor">
+                    <div className="destination-img">
+                      <img
+                        src={`assets/img/destination/${elem.img}`}
+                        alt={elem.title}
+                      />
+                      <div className="destination-content">
+                        <div className="media-left">
+                          <h4 className="box-title">
+                            <Link to="/destination-details">{elem.title}</Link>
+                          </h4>
+                          <span className="destination-subtitle">{elem.listing}</span>
+                        </div>
+                        <div>
+                          <Link to="/destination-details" className="th-btn style2 th-icon">
+                            View All
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="destination-box gsap-cursor">
-                  <div className="destination-img">
-                    <img src="assets/img/destination/destination_1_3.jpg" alt="destination image" />
-                    <div className="destination-content">
-                      <div className="media-left">
-                        <h4 className="box-title">
-                          <Link to="/destinaton-details"><a>Maldives</a></Link>
-                        </h4>
-                        <span className="destination-subtitle">15 Listing</span>
-                      </div>
-                      <div>
-                        <Link to="/destinaton-details"><a className="th-btn style2 th-icon">
-                          View All
-                        </a></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="destination-box gsap-cursor">
-                  <div className="destination-img">
-                    <img src="assets/img/destination/destination_1_4.jpg" alt="destination image" />
-                    <div className="destination-content">
-                      <div className="media-left">
-                        <h4 className="box-title">
-                          <Link to="/destinaton-details"> <a>Maldives</a></Link>
-                        </h4>
-                        <span className="destination-subtitle">15 Listing</span>
-                      </div>
-                      <div>
-                        <Link to="/destinaton-details"><a className="th-btn style2 th-icon">
-                          View All
-                        </a></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="destination-box gsap-cursor">
-                  <div className="destination-img">
-                    <img src="assets/img/destination/destination_1_5.jpg" alt="destination image" />
-                    <div className="destination-content">
-                      <div className="media-left">
-                        <h4 className="box-title">
-                          <Link to="/destinaton-details"><a >Maldives</a></Link>
-                        </h4>
-                        <span className="destination-subtitle">15 Listing</span>
-                      </div>
-                      <div>
-                        <Link to="/destinaton-details"> <a className="th-btn style2 th-icon">
-                          View All
-                        </a></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="destination-box gsap-cursor">
-                  <div className="destination-img">
-                    <img src="assets/img/destination/destination_1_1.jpg" alt="destination image" />
-                    <div className="destination-content">
-                      <div className="media-left">
-                        <h4 className="box-title">
-                          <Link to="/destinaton-details"> <a >Maldives</a></Link>
-                        </h4>
-                        <span className="destination-subtitle">15 Listing</span>
-                      </div>
-                      <div>
-                        <Link to="/destinaton-details">  <a className="th-btn style2 th-icon">
-                          View All
-                        </a></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-
-              {/* You can repeat <SwiperSlide> for other destinations */}
-
+                </SwiperSlide>
+              ))}
             </Swiper>
+
           </div>
-
-
         </div>
       </div>
       <div
@@ -678,11 +597,11 @@ function Home() {
           </div>
           <div className="slider-area tour-slider">
             <Swiper
-              modules={[Navigation,Autoplay]}
+              modules={[Navigation, Autoplay]}
               navigation
               // pagination={{ clickable: true }}
               spaceBetween={20}
-               autoplay={{ delay: 3000, disableOnInteraction: false }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={true}
               breakpoints={{
                 0: { slidesPerView: 1 },
@@ -1027,7 +946,7 @@ function Home() {
           </div>
           <div className="slider-area">
             <Swiper
-              modules={[Navigation, Pagination,Autoplay]}
+              modules={[Navigation, Pagination, Autoplay]}
               className="swiper th-slider teamSlider1 has-shadow"
               id="teamSlider1"
               spaceBetween={30}
@@ -1087,7 +1006,7 @@ function Home() {
           <div className="slider-area">
             <div className="swiper th-slider testiSlider1 has-shadow" id="testiSlider1">
               <Swiper
-                modules={[Pagination,Autoplay]}
+                modules={[Pagination, Autoplay]}
                 pagination={{ el: ".slider-pagination", clickable: true }}
                 initialSlide={2}
                 loop={true}
@@ -1256,10 +1175,10 @@ function Home() {
           <div className="slider-area">
             <div className="swiper th-slider has-shadow" id="blogSlider1">
               <Swiper
-                modules={[Navigation,Autoplay]}
+                modules={[Navigation, Autoplay]}
                 navigation
                 // pagination={{ clickable: true }}
-                 autoplay={{ delay: 3000, disableOnInteraction: false }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
                 spaceBetween={30}
                 loop={true}
                 breakpoints={{

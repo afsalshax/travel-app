@@ -153,7 +153,7 @@ function Destinationdetails() {
               <div className="destination-gallery-wrapper">
                 <h3 className="page-title mt-30 mb-30">From our gallery</h3>
                 <div className="row gy-4 gallery-row filter-active">
-                  <div className="col-xxl-auto filter-item">
+                  <div className="col-lg-4 filter-item">
                     <div className="gallery-box style3">
                       <div className="gallery-img global-img">
                         <img
@@ -167,7 +167,7 @@ function Destinationdetails() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xxl-auto filter-item">
+                  <div className="col-lg-8 filter-item">
                     <div className="gallery-box style3">
                       <div className="gallery-img global-img">
                         <img
@@ -181,7 +181,7 @@ function Destinationdetails() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xxl-auto filter-item">
+                  <div className="col-lg-8 filter-item">
                     <div className="gallery-box style3">
                       <div className="gallery-img global-img">
                         <img
@@ -195,7 +195,7 @@ function Destinationdetails() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xxl-auto filter-item">
+                  <div className="col-lg-4 filter-item">
                     <div className="gallery-box style3">
                       <div className="gallery-img global-img">
                         <img
